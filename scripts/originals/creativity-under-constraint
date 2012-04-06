@@ -1,0 +1,68 @@
+{
+  "title": "Creativity Under Constraint",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "b00eb7b26bc9cdb2",
+      "text": "This is simply the idea that constraint aids, rather than hinders, creativity. This idea is counterintuitive, but I think there is a lot of evidence for it. In poetry. In art. In computer programming. "
+    },
+    {
+      "type": "paragraph",
+      "id": "e3a8e654fc90af31",
+      "text": "I have a friend who makes exquisite Japanese style furniture with only the simplest of tools. Hand tools. One corner of his shop is dedicated to maintenance of the tools. [http://andrewhunterart.com/ Andrew Hunter Art]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "id": "105cc712d2ed1512",
+      "item": {
+        "title": "Creativity Under Constraint"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b00eb7b26bc9cdb2"
+      },
+      "id": "b00eb7b26bc9cdb2",
+      "type": "add"
+    },
+    {
+      "type": "edit",
+      "id": "b00eb7b26bc9cdb2",
+      "item": {
+        "type": "paragraph",
+        "id": "b00eb7b26bc9cdb2",
+        "text": "This is simply the idea that constraint aids, rather than hinders, creativity. This idea is counterintuitive, but I think there is a lot of evidence for it. In poetry. In art. In computer programming. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e3a8e654fc90af31"
+      },
+      "id": "e3a8e654fc90af31",
+      "type": "add",
+      "after": "b00eb7b26bc9cdb2"
+    },
+    {
+      "type": "edit",
+      "id": "e3a8e654fc90af31",
+      "item": {
+        "type": "paragraph",
+        "id": "e3a8e654fc90af31",
+        "text": "I have a friend who makes exquisite Japanese style furniture with only the simplest of tools. Hand tools. One corner of his shop is dedicated to maintenance of the tools. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "e3a8e654fc90af31",
+      "item": {
+        "type": "paragraph",
+        "id": "e3a8e654fc90af31",
+        "text": "I have a friend who makes exquisite Japanese style furniture with only the simplest of tools. Hand tools. One corner of his shop is dedicated to maintenance of the tools. [http://andrewhunterart.com/ Andrew Hunter Art]"
+      }
+    }
+  ]
+}

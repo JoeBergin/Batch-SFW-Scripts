@@ -1,0 +1,256 @@
+{
+  "title": "Experiences",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "0344f80e1271645c",
+      "text": "I am fairly new to using the Smallest Federated Wiki. I've done some back end content translation for it, under Ward Cunningham's direction. But I wanted to see what it was like to actually use as a medium of expression. "
+    },
+    {
+      "type": "paragraph",
+      "id": "65c92470690fcded",
+      "text": "I also have had a long time goal of improving the teaching of object-oriented programming, especially in the use of polymorphism. Many instructors have judged this topic too difficult to teach, though I have found effective ways to do it, using some ideas from agile software development. "
+    },
+    {
+      "type": "paragraph",
+      "id": "7f5033d4aa2d1a10",
+      "text": "I have a rather dense writing style. This makes it difficult for me to express some complex things in an understandable way. I tend to give \"correct\" but not necessarily \"clear\" descriptions. I work against this tendency, but it is still there. I was raised as a mathematician, after all. "
+    },
+    {
+      "type": "paragraph",
+      "id": "cfaf2f3e8856ac67",
+      "text": "You must judge whether the result here is satisfying. But I certainly found the experience of creating it satisfying. The SFW really helped me, I think, in breaking up the dense bits. When I reach a topic with many deep implications, the wiki lets me easily (trivially) factor them out to separate pages. "
+    },
+    {
+      "type": "paragraph",
+      "id": "0871db6f9a3a3da1",
+      "text": "It has, I just noticed, also made me think in terms of shorter paragraphs than I would normally write, since the small page format is constrained. I also find myself, writing here, constantly thinking about the presentation, though not in terms of complex markup. I think about what the user would like to see together on a page for comparison. "
+    },
+    {
+      "type": "paragraph",
+      "id": "6a21c591bec589f8",
+      "text": "And yes, I find the constraint of the small page, and even smaller text factory, to be an aid in creativity, as [[Creativity Under Constraint]] has been one of the things I've thought about for a long time. "
+    },
+    {
+      "type": "paragraph",
+      "id": "69b2111a1cd00050",
+      "text": "I noticed, writing here, that at different time, a reader might want to see two different pages side by side at the same time. But the choice of pages will change as the reader goes through the work. All it takes to achieve this, in writing, is to put a link to a likely \"neighbor\" page somewhere on the current page. "
+    },
+    {
+      "type": "paragraph",
+      "id": "b9db8dbbf2661693",
+      "text": "So, in this essay, you might like to see the discussion on polymorphism next to the discussion on ad-hoc selection, or next to the example. This is easy to achieve with links. Likewise, you might want to see the parts of the example adjacent to each other. "
+    },
+    {
+      "type": "paragraph",
+      "id": "543ca94b76c6e120",
+      "text": "So this was a very pleasant experience. It helped me break up my thoughts into reasonable chunks, defer some threads while I pursued others, think about presentation as I went, and let me easily refactor when I needed to. "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "id": "47587e4e07febf47",
+      "item": {
+        "title": "Experiences"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0344f80e1271645c"
+      },
+      "id": "0344f80e1271645c",
+      "type": "add"
+    },
+    {
+      "type": "edit",
+      "id": "0344f80e1271645c",
+      "item": {
+        "type": "paragraph",
+        "id": "0344f80e1271645c",
+        "text": "I am fairly new to using the Smallest Federated Wiki. I've done some back end content translation for it, under Ward Cunningham's direction. But I wanted to see what it was like to actually use as a medium of expression. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "65c92470690fcded"
+      },
+      "id": "65c92470690fcded",
+      "type": "add",
+      "after": "0344f80e1271645c"
+    },
+    {
+      "type": "edit",
+      "id": "65c92470690fcded",
+      "item": {
+        "type": "paragraph",
+        "id": "65c92470690fcded",
+        "text": "I also have had a long time goal of improving the teaching of object-oriented programming, especially in the use of polymorphism. Many instructors have judged this topic too difficult to teach, though I have found effective ways to do it, using some ideas from agile software development. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7f5033d4aa2d1a10"
+      },
+      "id": "7f5033d4aa2d1a10",
+      "type": "add",
+      "after": "65c92470690fcded"
+    },
+    {
+      "type": "edit",
+      "id": "7f5033d4aa2d1a10",
+      "item": {
+        "type": "paragraph",
+        "id": "7f5033d4aa2d1a10",
+        "text": "I have a rather dense writing style. This makes it difficult for me to express some complex things in an understandable way. I tend to give \"correct\" but not necessarily \"clear\" descriptions. I work against this tendency, but it is still there. I was raised as a mathematician, after all. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "cfaf2f3e8856ac67"
+      },
+      "id": "cfaf2f3e8856ac67",
+      "type": "add",
+      "after": "7f5033d4aa2d1a10"
+    },
+    {
+      "type": "edit",
+      "id": "cfaf2f3e8856ac67",
+      "item": {
+        "type": "paragraph",
+        "id": "cfaf2f3e8856ac67",
+        "text": "You must judge whether the result here is satisfying. But I certainly found the experience of creating it satisfying. The SFW really helped me, I think, in breaking up the dense bits. When I reach a topic with many deep implications, the wiki lets me easily (trivially) factor them out to separate pages. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0871db6f9a3a3da1"
+      },
+      "id": "0871db6f9a3a3da1",
+      "type": "add",
+      "after": "cfaf2f3e8856ac67"
+    },
+    {
+      "type": "edit",
+      "id": "0871db6f9a3a3da1",
+      "item": {
+        "type": "paragraph",
+        "id": "0871db6f9a3a3da1",
+        "text": "It has, I just noticed, also made me think in terms of shorter paragraphs than I would normally write. I find myself, writing here, constantly thinking about the presentation, though not in terms of complex markup. I think about what the user would like to see together on a page for comparison. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "0871db6f9a3a3da1",
+      "item": {
+        "type": "paragraph",
+        "id": "0871db6f9a3a3da1",
+        "text": "It has, I just noticed, also made me think in terms of shorter paragraphs than I would normally write, since the small page format is constrained. I also find myself, writing here, constantly thinking about the presentation, though not in terms of complex markup. I think about what the user would like to see together on a page for comparison. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "6a21c591bec589f8"
+      },
+      "id": "6a21c591bec589f8",
+      "type": "add",
+      "after": "0871db6f9a3a3da1"
+    },
+    {
+      "type": "edit",
+      "id": "6a21c591bec589f8",
+      "item": {
+        "type": "paragraph",
+        "id": "6a21c591bec589f8",
+        "text": "And yes, I find the constraint of the small page to be an aid in creativity, as \"creativity under constraint\" has been one of the things I've thought about for a long time. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "69b2111a1cd00050"
+      },
+      "id": "69b2111a1cd00050",
+      "type": "add",
+      "after": "6a21c591bec589f8"
+    },
+    {
+      "type": "edit",
+      "id": "69b2111a1cd00050",
+      "item": {
+        "type": "paragraph",
+        "id": "69b2111a1cd00050",
+        "text": "I noticed, writing here, that at different time, a reader might want to see two different pages side by side at the same time. But the choice of pages will change as the reader goes through the work. All it takes to achieve this, in writing, is to put a link to a likely \"neighbor\" page somewhere on the current page. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b9db8dbbf2661693"
+      },
+      "id": "b9db8dbbf2661693",
+      "type": "add",
+      "after": "69b2111a1cd00050"
+    },
+    {
+      "type": "edit",
+      "id": "b9db8dbbf2661693",
+      "item": {
+        "type": "paragraph",
+        "id": "b9db8dbbf2661693",
+        "text": "So, in this essay, you might like to see the discussion on polymorphism next to the discussion on ad-hoc selection, or next to the example. This is easy to achieve with links. Likewise, you might want to see the parts of the example adjacent to each other. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "543ca94b76c6e120"
+      },
+      "id": "543ca94b76c6e120",
+      "type": "add",
+      "after": "b9db8dbbf2661693"
+    },
+    {
+      "type": "edit",
+      "id": "543ca94b76c6e120",
+      "item": {
+        "type": "paragraph",
+        "id": "543ca94b76c6e120",
+        "text": "So this was a very pleasant experience. It helped me break up my thoughts into reasonable chunks, defer some threads while I pursued others, think about presentation as I went, and let me easily refactor when I needed to. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "6a21c591bec589f8",
+      "item": {
+        "type": "paragraph",
+        "id": "6a21c591bec589f8",
+        "text": "And yes, I find the constraint of the small page, and even smaller text \"factory,\" to be an aid in creativity, as \"creativity under constraint\" has been one of the things I've thought about for a long time. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "6a21c591bec589f8",
+      "item": {
+        "type": "paragraph",
+        "id": "6a21c591bec589f8",
+        "text": "And yes, I find the constraint of the small page, and even smaller text factory, to be an aid in creativity, as \"creativity under constraint\" has been one of the things I've thought about for a long time. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "6a21c591bec589f8",
+      "item": {
+        "type": "paragraph",
+        "id": "6a21c591bec589f8",
+        "text": "And yes, I find the constraint of the small page, and even smaller text factory, to be an aid in creativity, as [[Creativity Under Constraint]] has been one of the things I've thought about for a long time. "
+      }
+    }
+  ]
+}

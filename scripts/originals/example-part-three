@@ -1,0 +1,220 @@
+{
+  "title": "Example Part Three",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "d5afc17b14ccfa40",
+      "text": "So, we have built our Negative and NonNegative classes and are now faced with handling the insert and purchase situations in the program. We will use the max-min-HashMap idea discussed in [[Marshaling the Objects]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "e4ac2df2c81add1b",
+      "text": "First, we create an pre-load a HashMap in the program at startup. It has two keys, 0 and 1 and the value for 1 is an instance of NonNegative, and for 0 an instance of Negative. "
+    },
+    {
+      "type": "paragraph",
+      "id": "8e5946ca1e4a0570",
+      "text": "Next provide a private method named map, that takes an arbitrary int and, using max and min, first compresses the value to either 1 or zero depending on its value, and then accesses the map's value for the result. It returns the associated strategy. "
+    },
+    {
+      "type": "paragraph",
+      "id": "4813d9d382d94f23",
+      "text": "Then, when the program needs to \"analyze\" an input in an insert operation, it takes the presented value and maps it into a strategy, to which it just sends the insert message. If the object is of class NonNegative, the insert will occur, otherwise error processing. And cyclomatic complexity of the code you write is still 1. "
+    },
+    {
+      "type": "paragraph",
+      "id": "c0ad869262b12776",
+      "text": "You do exactly the same thing in the purchase situation, sending the purchase method to the retrieved object instead.  And what if it later occurs in development that you need a third or fourth situation in which to distinguish negative values? Well, as we discussed in part 2, just add another method to the interface and implement it in the classes and then resolve to an object in the same way. "
+    },
+    {
+      "type": "paragraph",
+      "id": "7349d7ebd1100c29",
+      "text": "There are harder situations, of course. Note that we sort of assumed above that the strategy objects are singletons. If they are not, you can always put factory objects into the HashMap instead of simpler objects. The factory retrieved can then tailor a strategy to the current situation. "
+    },
+    {
+      "type": "paragraph",
+      "id": "a2b1693d0ae4ebbf",
+      "text": "<hr/>"
+    },
+    {
+      "type": "paragraph",
+      "id": "f66448ad975902ac",
+      "text": "But there are situations in which nothing seems to work but an if-statement. In such a situation, you might be able to improve your life as a programmer, by centralizing it into a single place and, instead of setting a flag, producing a strategy object that can thereafter be passed to the sites at which it will itself distinguish behaviors. The if statement  produces one kind of object or another, having one behavior or another, just as our HashMap does. "
+    },
+    {
+      "type": "paragraph",
+      "id": "0b522493ff41afa2",
+      "text": "Then, instead of maintaining a lot of if-statements throughout the program, you have just one for each such \"family\" of decisions. A big improvement in a large program and it helps you [[Say It Once]], even for the structures. "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "id": "a3ed65b504492bd7",
+      "item": {
+        "title": "Example Part Three"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d5afc17b14ccfa40"
+      },
+      "id": "d5afc17b14ccfa40",
+      "type": "add"
+    },
+    {
+      "type": "edit",
+      "id": "d5afc17b14ccfa40",
+      "item": {
+        "type": "paragraph",
+        "id": "d5afc17b14ccfa40",
+        "text": "So, we have built our Negative and NonNegative classes and are now faced with handling the insert and purchase situations in the program. We will use the max-min-HashMap idea discussed in [[Marshaling the Objects]]"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e4ac2df2c81add1b"
+      },
+      "id": "e4ac2df2c81add1b",
+      "type": "add",
+      "after": "d5afc17b14ccfa40"
+    },
+    {
+      "type": "edit",
+      "id": "e4ac2df2c81add1b",
+      "item": {
+        "type": "paragraph",
+        "id": "e4ac2df2c81add1b",
+        "text": "First, we create an pre-load a HashMap in the program at startup. It has two keys, 0 and 1 and the value for 1 is an instance of NonNegative, and for 0 an instance of Negative. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8e5946ca1e4a0570"
+      },
+      "id": "8e5946ca1e4a0570",
+      "type": "add",
+      "after": "e4ac2df2c81add1b"
+    },
+    {
+      "type": "edit",
+      "id": "8e5946ca1e4a0570",
+      "item": {
+        "type": "paragraph",
+        "id": "8e5946ca1e4a0570",
+        "text": "Next provide a private method named map, that takes an arbitrary int and, using max and min, first compresses the value to either 1 or zero depending on its value, and then accesses the map's value for the result. It returns the associated strategy. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4813d9d382d94f23"
+      },
+      "id": "4813d9d382d94f23",
+      "type": "add",
+      "after": "8e5946ca1e4a0570"
+    },
+    {
+      "type": "edit",
+      "id": "4813d9d382d94f23",
+      "item": {
+        "type": "paragraph",
+        "id": "4813d9d382d94f23",
+        "text": "Then, when the program needs to \"analyze\" an input in an insert operation, it takes the presented value and maps it into a strategy, to which it just sends the insert message. If the object is of class NonNegative, the insert will occur, otherwise error processing. And cyclomatic complexity of the code you write is still 1. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c0ad869262b12776"
+      },
+      "id": "c0ad869262b12776",
+      "type": "add",
+      "after": "4813d9d382d94f23"
+    },
+    {
+      "type": "edit",
+      "id": "c0ad869262b12776",
+      "item": {
+        "type": "paragraph",
+        "id": "c0ad869262b12776",
+        "text": "You do exactly the same thing in the purchase situation, sending the purchase method to the retrieved object instead.  And what if it later occurs in development that you need a third or fourth situation in which to distinguish negative values? Well, as we discussed in part 2, just add another method to the interface and implement it in the classes and then resolve to an object in the same way. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7349d7ebd1100c29"
+      },
+      "id": "7349d7ebd1100c29",
+      "type": "add",
+      "after": "c0ad869262b12776"
+    },
+    {
+      "type": "edit",
+      "id": "7349d7ebd1100c29",
+      "item": {
+        "type": "paragraph",
+        "id": "7349d7ebd1100c29",
+        "text": "There are harder situations, of course. Note that we sort of assumed above that the strategy objects are singletons. If they are not, you can always put factory objects into the HashMap instead of simpler objects. The factory retrieved can then tailor a strategy to the current situation. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a2b1693d0ae4ebbf"
+      },
+      "id": "a2b1693d0ae4ebbf",
+      "type": "add",
+      "after": "7349d7ebd1100c29"
+    },
+    {
+      "type": "edit",
+      "id": "a2b1693d0ae4ebbf",
+      "item": {
+        "type": "paragraph",
+        "id": "a2b1693d0ae4ebbf",
+        "text": "<hr/>"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f66448ad975902ac"
+      },
+      "id": "f66448ad975902ac",
+      "type": "add",
+      "after": "a2b1693d0ae4ebbf"
+    },
+    {
+      "type": "edit",
+      "id": "f66448ad975902ac",
+      "item": {
+        "type": "paragraph",
+        "id": "f66448ad975902ac",
+        "text": "But there are situations in which nothing seems to work but an if-statement. In such a situation, you might be able to improve your life as a programmer, by centralizing it into a single place and, instead of setting a flag, producing a strategy object that can thereafter be passed to the sites at which it will itself distinguish behaviors. The if statement  produces one kind of object or another, having one behavior or another, just as our HashMap does. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0b522493ff41afa2"
+      },
+      "id": "0b522493ff41afa2",
+      "type": "add",
+      "after": "f66448ad975902ac"
+    },
+    {
+      "type": "edit",
+      "id": "0b522493ff41afa2",
+      "item": {
+        "type": "paragraph",
+        "id": "0b522493ff41afa2",
+        "text": "Then, instead of maintaining a lot of if-statements throughout the program, you have just one for each such \"family\" of decisions. A big improvement in a large program and it helps you [[Say It Once]], even for the structures. "
+      }
+    }
+  ]
+}

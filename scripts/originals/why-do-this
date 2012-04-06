@@ -1,0 +1,190 @@
+{
+  "title": "Why Do This",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "4fa66f6b383186cd",
+      "text": "First, note that I, myself, don't always use Polymorphism to solve every problem of [[Selection]], though I use it quite a lot. It is just a skill, like any other, but one that you should be able to use if you program in an Object-Oriented language, such as Java or Python. "
+    },
+    {
+      "type": "paragraph",
+      "id": "bb19f66eb5aa31eb",
+      "text": "Polymorphism can help you achieve very low cyclomatic complexity in a program. This is, in general a good thing as it makes reading and understanding the program easy if you limit yourself to a microscopic level, as you need to do when updating or maintaining a program. "
+    },
+    {
+      "type": "paragraph",
+      "id": "3eb9996a8219838a",
+      "text": "But even if you intend to use it sparingly, you need to quickly recognize occurrences in which it applies, and quickly see the consequences of applying a polymorphic solution versus an ad-hoc one. This, sadly, is lacking in many programmers, even those who consider themselves \"experts\" in OO. "
+    },
+    {
+      "type": "paragraph",
+      "id": "f66f9d112ee7dcc5",
+      "text": "So, one reason to do this is just for the practice. [[Joe Bergin]] has learned that instructors have a difficult time teaching polymorphism and too many instructors have abandoned the attempt. In the past he, along with Eugene Wallingford have issued the \"Polymorphism Challenge\" which is to attempt to write some standard bit of code without any if or switch statements (or at least a minimal number). The purpose is really just for purposes of skill building so that the one taking up the challenge learns to better use his or her tools."
+    },
+    {
+      "type": "paragraph",
+      "id": "666b503c7e0090cc",
+      "text": "This was based on Joe's \"Polymorphism Etude\" paper (unpublished), which makes the same point. \n\nLater on, the [http://www.antiifcampaign.com/ Anti-If Campaign] came along and was joined by some pretty impressive actors: Kent Beck among them. \n\nJoe maintains that Polymorphic Programming if done well can result in beautiful programs. The essay explains a bit of the How, the Why, and the [[Consequences]]. "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "id": "eba1fe3efca92775",
+      "item": {
+        "title": "Why Do This"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4fa66f6b383186cd"
+      },
+      "id": "4fa66f6b383186cd",
+      "type": "add"
+    },
+    {
+      "type": "edit",
+      "id": "4fa66f6b383186cd",
+      "item": {
+        "type": "paragraph",
+        "id": "4fa66f6b383186cd",
+        "text": "First, note that I, myself, don't always use Polymorphism to solve every problem of [[Selection]], though I use it quite a lot. It is just a skill, like any other, but one that you should be able to use if you program in an Object-Oriented language, such as Java or Python. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "bb19f66eb5aa31eb"
+      },
+      "id": "bb19f66eb5aa31eb",
+      "type": "add",
+      "after": "4fa66f6b383186cd"
+    },
+    {
+      "type": "edit",
+      "id": "bb19f66eb5aa31eb",
+      "item": {
+        "type": "paragraph",
+        "id": "bb19f66eb5aa31eb",
+        "text": "Polymorphism can help you achieve very low cyclomatic complexity in a program. This is, in general a good thing as it makes reading and understanding the program easy if you limit yourself to a microscopic level, as you need to do when updating or maintaining a program. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3eb9996a8219838a"
+      },
+      "id": "3eb9996a8219838a",
+      "type": "add",
+      "after": "bb19f66eb5aa31eb"
+    },
+    {
+      "type": "edit",
+      "id": "3eb9996a8219838a",
+      "item": {
+        "type": "paragraph",
+        "id": "3eb9996a8219838a",
+        "text": "But even if you intend to use it sparingly, you need to quickly recognize occurrences in which it applies, and quickly see the consequences of applying a polymorphic solution versus an ad-hoc one. This, sadly, is lacking in many programmers, even those who consider themselves \"experts\" in OO. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f66f9d112ee7dcc5"
+      },
+      "id": "f66f9d112ee7dcc5",
+      "type": "add",
+      "after": "3eb9996a8219838a"
+    },
+    {
+      "type": "edit",
+      "id": "f66f9d112ee7dcc5",
+      "item": {
+        "type": "paragraph",
+        "id": "f66f9d112ee7dcc5",
+        "text": "So, one reason to do this is just for the practice. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "f66f9d112ee7dcc5",
+      "item": {
+        "type": "paragraph",
+        "id": "f66f9d112ee7dcc5",
+        "text": "So, one reason to do this is just for the practice. [[Joe Bergin]] has learned that instructors have a difficult time teaching polymorphism and too many instructors have abandoned the attempt. In the past he, along with Eugene Wallingford have issued the \"Polymorphism Challenge\" which is to attempt to write some standard bit of code without any if or switch statements (or at least a minimal number). The purpose is really just for purposes of skill building so that the one taking up the challenge learns to better use his or her tools."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4d1dc89270378f84"
+      },
+      "id": "4d1dc89270378f84",
+      "type": "add",
+      "after": "f66f9d112ee7dcc5"
+    },
+    {
+      "type": "remove",
+      "id": "4d1dc89270378f84"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "666b503c7e0090cc"
+      },
+      "id": "666b503c7e0090cc",
+      "type": "add",
+      "after": "f66f9d112ee7dcc5"
+    },
+    {
+      "type": "edit",
+      "id": "666b503c7e0090cc",
+      "item": {
+        "type": "paragraph",
+        "id": "666b503c7e0090cc",
+        "text": "This was based on Joe's \"Polymorphism Etude\" paper (unpublished), which makes the same point. </p>\n\n<p>Later on, the Anti-If Campaign came along and was joined by some pretty impressive actors: Kent Beck among them. </p>\n\n<p>Joe maintains that Polymorphic Programming if done well can result in beautiful programs. The essay explains a bit of the How, the Why, and the Consequences. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "666b503c7e0090cc",
+      "item": {
+        "type": "paragraph",
+        "id": "666b503c7e0090cc",
+        "text": "This was based on Joe's \"Polymorphism Etude\" paper (unpublished), which makes the same point. \n\nLater on, the Anti-If Campaign came along and was joined by some pretty impressive actors: Kent Beck among them. \n\nJoe maintains that Polymorphic Programming if done well can result in beautiful programs. The essay explains a bit of the How, the Why, and the Consequences. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "666b503c7e0090cc",
+      "item": {
+        "type": "paragraph",
+        "id": "666b503c7e0090cc",
+        "text": "This was based on Joe's \"Polymorphism Etude\" paper (unpublished), which makes the same point. \n\nLater on, the [http://www.antiifcampaign.com/ Anti-If Campaign] came along and was joined by some pretty impressive actors: Kent Beck among them. \n\nJoe maintains that Polymorphic Programming if done well can result in beautiful programs. The essay explains a bit of the How, the Why, and the Consequences. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a4cd8891595d6299"
+      },
+      "id": "a4cd8891595d6299",
+      "type": "add",
+      "after": "666b503c7e0090cc"
+    },
+    {
+      "type": "edit",
+      "id": "666b503c7e0090cc",
+      "item": {
+        "type": "paragraph",
+        "id": "666b503c7e0090cc",
+        "text": "This was based on Joe's \"Polymorphism Etude\" paper (unpublished), which makes the same point. \n\nLater on, the [http://www.antiifcampaign.com/ Anti-If Campaign] came along and was joined by some pretty impressive actors: Kent Beck among them. \n\nJoe maintains that Polymorphic Programming if done well can result in beautiful programs. The essay explains a bit of the How, the Why, and the [[Consequences]]. "
+      }
+    },
+    {
+      "type": "remove",
+      "id": "a4cd8891595d6299"
+    }
+  ]
+}

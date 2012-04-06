@@ -1,0 +1,59 @@
+{
+  "title": "DTSTTCPW",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "74751ec12c33be35",
+      "text": "Do The Simplest Thing That Could Possibly Work."
+    },
+    {
+      "type": "paragraph",
+      "id": "18003c8498b9cbd4",
+      "text": "This is a pattern of agile software development. It is discussed in [[Joe Bergin]]'s Agile Software: Patterns of Practice. The same advice (not as a pattern) is found in Kent Beck's Extreme Programming Explained. "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "id": "00452ac57c544339",
+      "item": {
+        "title": "DTSTTCPW"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "74751ec12c33be35"
+      },
+      "id": "74751ec12c33be35",
+      "type": "add"
+    },
+    {
+      "type": "edit",
+      "id": "74751ec12c33be35",
+      "item": {
+        "type": "paragraph",
+        "id": "74751ec12c33be35",
+        "text": "Do The Simplest Thing That Could Possibly Work."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "18003c8498b9cbd4"
+      },
+      "id": "18003c8498b9cbd4",
+      "type": "add",
+      "after": "74751ec12c33be35"
+    },
+    {
+      "type": "edit",
+      "id": "18003c8498b9cbd4",
+      "item": {
+        "type": "paragraph",
+        "id": "18003c8498b9cbd4",
+        "text": "This is a pattern of agile software development. It is discussed in [[Joe Bergin]]'s Agile Software: Patterns of Practice. The same advice (not as a pattern) is found in Kent Beck's Extreme Programming Explained. "
+      }
+    }
+  ]
+}

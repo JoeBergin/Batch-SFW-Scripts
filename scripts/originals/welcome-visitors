@@ -1,0 +1,686 @@
+{
+  "title": "Welcome Visitors",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "57b206a5457d1b73",
+      "text": "Welcome to the [[Smallest Federated Wiki]]. You may be seeing this page because you have just entered a wiki of your own. If so, you have three things to do before you go on. See below."
+    },
+    {
+      "type": "paragraph",
+      "id": "0af1a360069e8729",
+      "text": "Essay on [[Polymorphic Programming]] by [[Joe Bergin]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "1e570bcfba0c419d",
+      "text": "<hr/>"
+    },
+    {
+      "type": "paragraph",
+      "id": "b28329bb5f7aa4f1",
+      "text": "Note on my [[Experiences]] in using this wiki as a medium of expression for an essay. "
+    },
+    {
+      "type": "paragraph",
+      "id": "016c26bc4930c516",
+      "text": "<hr/>"
+    },
+    {
+      "type": "paragraph",
+      "id": "aeeaf9df2e7af92d",
+      "text": "To make this wiki your own, do the following. "
+    },
+    {
+      "type": "paragraph",
+      "id": "821827c99b90cfd1",
+      "text": "<b>One:</b> Create a page about yourself. Start by making a link to that page right here. Double-click the gray box below. That opens an editor. Type your name enclosed in double square brackets. Then press Command/CTRL-S to save."
+    },
+    {
+      "type": "factory",
+      "id": "a8d07bfffb0756ee"
+    },
+    {
+      "type": "paragraph",
+      "id": "2bbd646ff3f44b51",
+      "text": "<b>Two:</b> Create a page about things you do on this wiki. Double-click the gray box below. Type a descriptive name of something you will be writing about. Enclose it in square brackets. Then press Command/CTRL-S to save."
+    },
+    {
+      "type": "factory",
+      "id": "05e2fa92643677ca"
+    },
+    {
+      "type": "paragraph",
+      "id": "0cbb4ef5f5d7e472",
+      "text": "<b>Three:</b> Look for the <i>claim</i> button below this page. If you have your own OpenID you can use it to claim these pages so that only you can edit them. If you have a Google account you can use that too. Press the (G) button. Press the (Y) button to use your Yahoo account. You get the idea."
+    },
+    {
+      "type": "paragraph",
+      "id": "ee416d431ebf4fb4",
+      "text": "Start writing. Click either link. Press [+] to add more writing spaces. Read [[How to Wiki]] for more ideas."
+    },
+    {
+      "text": "This page was first drafted Sunday, June 26th, 2011, at [[Indie Web Camp]]. You are welcome to copy this page to any server you own and revise its welcoming message as you see fit. You can assume this has happened many times already.",
+      "id": "7b56f22a4b9ee974",
+      "type": "paragraph"
+    }
+  ],
+  "journal": [
+    {
+      "id": "7b56f22a4b9ee974",
+      "type": "edit",
+      "item": {
+        "text": "Welcome to the [[Smallest Federated Wiki]]. This page was first drafted Sunday, June 26th, 2011, at [[Indie Web Camp]]. You are welcome to copy this page to any server you own and revise its welcoming message as you see fit. You can assume this has happened many times already. See also [[",
+        "id": "7b56f22a4b9ee974",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "7b56f22a4b9ee974",
+      "type": "edit",
+      "item": {
+        "text": "Welcome to the [[Smallest Federated Wiki]]. This page was first drafted Sunday, June 26th, 2011, at [[Indie Web Camp]]. You are welcome to copy this page to any server you own and revise its welcoming message as you see fit. You can assume this has happened many times already, most likely among the [[List of Pioneers]].",
+        "id": "7b56f22a4b9ee974",
+        "type": "paragraph"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "57b206a5457d1b73"
+      },
+      "id": "57b206a5457d1b73",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "57b206a5457d1b73"
+    },
+    {
+      "type": "edit",
+      "id": "7b56f22a4b9ee974",
+      "item": {
+        "text": "This page was first drafted Sunday, June 26th, 2011, at [[Indie Web Camp]]. You are welcome to copy this page to any server you own and revise its welcoming message as you see fit. You can assume this has happened many times already.",
+        "id": "7b56f22a4b9ee974",
+        "type": "paragraph"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "57b206a5457d1b73",
+      "item": {
+        "type": "paragraph",
+        "id": "57b206a5457d1b73",
+        "text": "Welcome to the [[Smallest Federated Wiki]]. You may be seeing this page because you have just entered a wiki of your own. If so, you have three things to do before you go on."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "821827c99b90cfd1"
+      },
+      "id": "821827c99b90cfd1",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "821827c99b90cfd1",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "821827c99b90cfd1"
+    },
+    {
+      "type": "edit",
+      "id": "821827c99b90cfd1",
+      "item": {
+        "type": "paragraph",
+        "id": "821827c99b90cfd1",
+        "text": "<b>One:</b> Create a page about yourself. Start by making a link to that page right here. Double-click the gray box below. That opens an editor. Type your name enclosed in double square brackets. Then press Command/CTRL-S to save."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "63ad2e58eecdd9e5"
+      },
+      "id": "63ad2e58eecdd9e5",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "821827c99b90cfd1",
+        "63ad2e58eecdd9e5",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "63ad2e58eecdd9e5"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "2bbd646ff3f44b51"
+      },
+      "id": "2bbd646ff3f44b51",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "821827c99b90cfd1",
+        "63ad2e58eecdd9e5",
+        "2bbd646ff3f44b51",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "2bbd646ff3f44b51"
+    },
+    {
+      "type": "edit",
+      "id": "2bbd646ff3f44b51",
+      "item": {
+        "type": "paragraph",
+        "id": "2bbd646ff3f44b51",
+        "text": "<b>Two:</b> Create a page about things you do on this wiki. Double-click the gray box below. Type a descriptive name of something you will be writing aout. Enclose it in square brackets. Then press Command/CTRL-S to save."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "05e2fa92643677ca"
+      },
+      "id": "05e2fa92643677ca",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "821827c99b90cfd1",
+        "63ad2e58eecdd9e5",
+        "2bbd646ff3f44b51",
+        "05e2fa92643677ca",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "05e2fa92643677ca"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0cbb4ef5f5d7e472"
+      },
+      "id": "0cbb4ef5f5d7e472",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "821827c99b90cfd1",
+        "63ad2e58eecdd9e5",
+        "2bbd646ff3f44b51",
+        "05e2fa92643677ca",
+        "0cbb4ef5f5d7e472",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "0cbb4ef5f5d7e472"
+    },
+    {
+      "type": "edit",
+      "id": "0cbb4ef5f5d7e472",
+      "item": {
+        "type": "paragraph",
+        "id": "0cbb4ef5f5d7e472",
+        "text": "<b>Three:</b> Look for the <i>claim</i> button below this page. If you have your own OpenID you can use it to claim these pages so that only you can edit them. If you have a Google account you can use that too. Press the (G) button. Press the (Y) button to use your Yahoo account. You get the idea."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ee416d431ebf4fb4"
+      },
+      "id": "ee416d431ebf4fb4",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "821827c99b90cfd1",
+        "63ad2e58eecdd9e5",
+        "2bbd646ff3f44b51",
+        "05e2fa92643677ca",
+        "0cbb4ef5f5d7e472",
+        "ee416d431ebf4fb4",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "ee416d431ebf4fb4"
+    },
+    {
+      "type": "edit",
+      "id": "ee416d431ebf4fb4",
+      "item": {
+        "type": "paragraph",
+        "id": "ee416d431ebf4fb4",
+        "text": "Start writing. Click either link. Press [+] to add more writing spaces. "
+      }
+    },
+    {
+      "type": "fork",
+      "site": "new.fed.wiki.org"
+    },
+    {
+      "type": "edit",
+      "id": "ee416d431ebf4fb4",
+      "item": {
+        "type": "paragraph",
+        "id": "ee416d431ebf4fb4",
+        "text": "Start writing. Click either link. Press [+] to add more writing spaces. Read [[How to Wiki]] for more ideas."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "63ad2e58eecdd9e5",
+      "item": {
+        "type": "paragraph",
+        "id": "63ad2e58eecdd9e5",
+        "text": "[[Seminars]]"
+      }
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "63ad2e58eecdd9e5",
+        "821827c99b90cfd1",
+        "2bbd646ff3f44b51",
+        "05e2fa92643677ca",
+        "0cbb4ef5f5d7e472",
+        "ee416d431ebf4fb4",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "63ad2e58eecdd9e5"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a8d07bfffb0756ee"
+      },
+      "id": "a8d07bfffb0756ee",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "63ad2e58eecdd9e5",
+        "821827c99b90cfd1",
+        "a8d07bfffb0756ee",
+        "2bbd646ff3f44b51",
+        "05e2fa92643677ca",
+        "0cbb4ef5f5d7e472",
+        "ee416d431ebf4fb4",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "a8d07bfffb0756ee"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1e570bcfba0c419d"
+      },
+      "id": "1e570bcfba0c419d",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "63ad2e58eecdd9e5",
+        "1e570bcfba0c419d",
+        "821827c99b90cfd1",
+        "a8d07bfffb0756ee",
+        "2bbd646ff3f44b51",
+        "05e2fa92643677ca",
+        "0cbb4ef5f5d7e472",
+        "ee416d431ebf4fb4",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "1e570bcfba0c419d"
+    },
+    {
+      "type": "edit",
+      "id": "1e570bcfba0c419d",
+      "item": {
+        "type": "paragraph",
+        "id": "1e570bcfba0c419d",
+        "text": "<hr/>"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "bf53feb7c037fba2"
+      },
+      "id": "bf53feb7c037fba2",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "bf53feb7c037fba2",
+        "63ad2e58eecdd9e5",
+        "1e570bcfba0c419d",
+        "821827c99b90cfd1",
+        "a8d07bfffb0756ee",
+        "2bbd646ff3f44b51",
+        "05e2fa92643677ca",
+        "0cbb4ef5f5d7e472",
+        "ee416d431ebf4fb4",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "bf53feb7c037fba2"
+    },
+    {
+      "type": "edit",
+      "id": "bf53feb7c037fba2",
+      "item": {
+        "type": "paragraph",
+        "id": "bf53feb7c037fba2",
+        "text": "This particular wiki contains the Seminars pattern language written by Markus Voelter and Astrid Fricke. It was bulk-translated into JSON by Joe Bergin. Seminars is a pattern language for running short seminars. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "57b206a5457d1b73",
+      "item": {
+        "type": "paragraph",
+        "id": "57b206a5457d1b73",
+        "text": "Welcome to the [[Smallest Federated Wiki]]. You may be seeing this page because you have just entered a wiki of your own. If so, you have three things to do before you go on. See below."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "aeeaf9df2e7af92d"
+      },
+      "id": "aeeaf9df2e7af92d",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "edit",
+      "id": "aeeaf9df2e7af92d",
+      "item": {
+        "type": "paragraph",
+        "id": "aeeaf9df2e7af92d",
+        "text": "To make this wiki your own, do the following. "
+      }
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "bf53feb7c037fba2",
+        "63ad2e58eecdd9e5",
+        "1e570bcfba0c419d",
+        "aeeaf9df2e7af92d",
+        "821827c99b90cfd1",
+        "a8d07bfffb0756ee",
+        "2bbd646ff3f44b51",
+        "05e2fa92643677ca",
+        "0cbb4ef5f5d7e472",
+        "ee416d431ebf4fb4",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "aeeaf9df2e7af92d"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "fd40828f9e5e56f6"
+      },
+      "id": "fd40828f9e5e56f6",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "bf53feb7c037fba2",
+        "63ad2e58eecdd9e5",
+        "fd40828f9e5e56f6",
+        "1e570bcfba0c419d",
+        "aeeaf9df2e7af92d",
+        "821827c99b90cfd1",
+        "a8d07bfffb0756ee",
+        "2bbd646ff3f44b51",
+        "05e2fa92643677ca",
+        "0cbb4ef5f5d7e472",
+        "ee416d431ebf4fb4",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "fd40828f9e5e56f6"
+    },
+    {
+      "type": "edit",
+      "id": "fd40828f9e5e56f6",
+      "item": {
+        "type": "paragraph",
+        "id": "fd40828f9e5e56f6",
+        "text": "Or, start here: [[Title And License]]"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "63ad2e58eecdd9e5",
+      "item": {
+        "type": "paragraph",
+        "id": "63ad2e58eecdd9e5",
+        "text": "Start here: Seminars[[Contents]]."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "63ad2e58eecdd9e5",
+      "item": {
+        "type": "paragraph",
+        "id": "63ad2e58eecdd9e5",
+        "text": "Start here: Seminars [[Contents]]."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "016c26bc4930c516"
+      },
+      "id": "016c26bc4930c516",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "edit",
+      "id": "016c26bc4930c516",
+      "item": {
+        "type": "paragraph",
+        "id": "016c26bc4930c516",
+        "text": "<hr/>"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0af1a360069e8729"
+      },
+      "id": "0af1a360069e8729",
+      "type": "add",
+      "after": "016c26bc4930c516"
+    },
+    {
+      "type": "edit",
+      "id": "0af1a360069e8729",
+      "item": {
+        "type": "paragraph",
+        "id": "0af1a360069e8729",
+        "text": "Aside on [[Polymorphic Programming]]"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "0af1a360069e8729",
+      "item": {
+        "type": "paragraph",
+        "id": "0af1a360069e8729",
+        "text": "Aside on [[Polymorphic Programming]] by [[Joe Bergin]]"
+      }
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "0af1a360069e8729",
+        "bf53feb7c037fba2",
+        "63ad2e58eecdd9e5",
+        "fd40828f9e5e56f6",
+        "1e570bcfba0c419d",
+        "aeeaf9df2e7af92d",
+        "821827c99b90cfd1",
+        "a8d07bfffb0756ee",
+        "2bbd646ff3f44b51",
+        "05e2fa92643677ca",
+        "0cbb4ef5f5d7e472",
+        "ee416d431ebf4fb4",
+        "7b56f22a4b9ee974",
+        "016c26bc4930c516"
+      ],
+      "id": "0af1a360069e8729"
+    },
+    {
+      "type": "remove",
+      "id": "bf53feb7c037fba2"
+    },
+    {
+      "type": "remove",
+      "id": "63ad2e58eecdd9e5"
+    },
+    {
+      "type": "remove",
+      "id": "fd40828f9e5e56f6"
+    },
+    {
+      "type": "edit",
+      "id": "0af1a360069e8729",
+      "item": {
+        "type": "paragraph",
+        "id": "0af1a360069e8729",
+        "text": "Essay on [[Polymorphic Programming]] by [[Joe Bergin]]"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d56dd5e36c2ebb63"
+      },
+      "id": "d56dd5e36c2ebb63",
+      "type": "add",
+      "after": "016c26bc4930c516"
+    },
+    {
+      "type": "edit",
+      "id": "d56dd5e36c2ebb63",
+      "item": {
+        "type": "paragraph",
+        "id": "d56dd5e36c2ebb63",
+        "text": "[[Recent Changes]]"
+      }
+    },
+    {
+      "type": "remove",
+      "id": "d56dd5e36c2ebb63"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b28329bb5f7aa4f1"
+      },
+      "id": "b28329bb5f7aa4f1",
+      "type": "add",
+      "after": "016c26bc4930c516"
+    },
+    {
+      "type": "edit",
+      "id": "b28329bb5f7aa4f1",
+      "item": {
+        "type": "paragraph",
+        "id": "b28329bb5f7aa4f1",
+        "text": "Note on my [[experiences]] in using this wiki as a medium of expression for an essay. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "b28329bb5f7aa4f1",
+      "item": {
+        "type": "paragraph",
+        "id": "b28329bb5f7aa4f1",
+        "text": "Note on my [[Experiences]] in using this wiki as a medium of expression for an essay. "
+      }
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "0af1a360069e8729",
+        "1e570bcfba0c419d",
+        "b28329bb5f7aa4f1",
+        "aeeaf9df2e7af92d",
+        "821827c99b90cfd1",
+        "a8d07bfffb0756ee",
+        "2bbd646ff3f44b51",
+        "05e2fa92643677ca",
+        "0cbb4ef5f5d7e472",
+        "ee416d431ebf4fb4",
+        "7b56f22a4b9ee974",
+        "016c26bc4930c516"
+      ],
+      "id": "b28329bb5f7aa4f1"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57b206a5457d1b73",
+        "0af1a360069e8729",
+        "1e570bcfba0c419d",
+        "b28329bb5f7aa4f1",
+        "016c26bc4930c516",
+        "aeeaf9df2e7af92d",
+        "821827c99b90cfd1",
+        "a8d07bfffb0756ee",
+        "2bbd646ff3f44b51",
+        "05e2fa92643677ca",
+        "0cbb4ef5f5d7e472",
+        "ee416d431ebf4fb4",
+        "7b56f22a4b9ee974"
+      ],
+      "id": "016c26bc4930c516"
+    }
+  ],
+  "synopsys": "The first federated wiki page written and often first page viewed."
+}

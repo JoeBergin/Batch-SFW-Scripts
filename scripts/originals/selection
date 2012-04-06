@@ -1,0 +1,245 @@
+{
+  "title": "Selection",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "57e3301a4964b9c7",
+      "text": "A selection problem is the situation that arises in which two or more possible behaviors are possible and the program must choose between them based on some criteria. In C-like languages these are typically handled with \"if\" statements and \"switches\". "
+    },
+    {
+      "type": "paragraph",
+      "id": "d747b54fe785f2df",
+      "text": "Handling selection in this traditional way will be called \"ad-hoc\" selection here. It has some issues. "
+    },
+    {
+      "type": "paragraph",
+      "id": "c2085cc89d44ded0",
+      "text": "If a selection problem appears in a program for the first time, you probably want to [[DTSTTCPW]] and just use ad-hoc solutions -- an if-statement. But what if you encounter the same issue a second time? Or what if you discover the same choice criteria a second or third time in the program? "
+    },
+    {
+      "type": "paragraph",
+      "id": "340ba4b2887986ba",
+      "text": "When you encounter repeated situations that must decide, based on the same criteria, ad-hoc selection doesn't serve you well in incremental development. The problem is that when changes occur in the code base, you need to find all of the previously built instances of this and update them consistently. But the tools available aren't usually very helpful with this. And if you miss just one, your program is broken. "
+    },
+    {
+      "type": "paragraph",
+      "id": "4e4037ba65350c9d",
+      "text": "The most common changes, when doing incremental development, with possibly changing requirements, are (a) adding a new option to an existing set of behaviors, and (b) changing a previously defined behavior. Either the criteria for choice changes or the behavior chosen changes. Now search 20,000 lines of code for all of the necessary updates - if and switch statements. "
+    },
+    {
+      "type": "paragraph",
+      "id": "499091d2aa36dbb8",
+      "text": "A third possibility is that you are adding something new that requires the same decision structure. Here a new choice will need to be made at a different place in the program, with new behaviors for the various cases. "
+    },
+    {
+      "type": "paragraph",
+      "id": "e1cac55e09a57754",
+      "text": "Of course you want to [[Say It Once]], which isn't hard to do for the behaviors, but is more complex for the choice structure. This is what polymorphic programming is all about. Once you Climb [[Information Hill]] you want to stay at the top, rather than fall down the other side. "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "id": "0eb46e66515c157a",
+      "item": {
+        "title": "Selection"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "57e3301a4964b9c7"
+      },
+      "id": "57e3301a4964b9c7",
+      "type": "add"
+    },
+    {
+      "type": "edit",
+      "id": "57e3301a4964b9c7",
+      "item": {
+        "type": "paragraph",
+        "id": "57e3301a4964b9c7",
+        "text": "A selection problem is the situation that arises in which two or more possible behaviors are possible and the program must choose between them based on some criteria. In C-like languages these are typically handled with \"if\" statements and \"switches\". "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d747b54fe785f2df"
+      },
+      "id": "d747b54fe785f2df",
+      "type": "add",
+      "after": "57e3301a4964b9c7"
+    },
+    {
+      "type": "edit",
+      "id": "d747b54fe785f2df",
+      "item": {
+        "type": "paragraph",
+        "id": "d747b54fe785f2df",
+        "text": "Handling selection in this traditional way will be called \"ad-hoc\" selection here. It has some issues. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c2085cc89d44ded0"
+      },
+      "id": "c2085cc89d44ded0",
+      "type": "add",
+      "after": "d747b54fe785f2df"
+    },
+    {
+      "type": "edit",
+      "id": "c2085cc89d44ded0",
+      "item": {
+        "type": "paragraph",
+        "id": "c2085cc89d44ded0",
+        "text": "If a selection problem appears in a program for the first time, you probably want to [[DTSTTCPW]] and just use ad-hoc solutions -- an if-statement. But what if you encounter the same issue a second time? Or what if you discover the same choice criteria a second or third time in the program? "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "340ba4b2887986ba"
+      },
+      "id": "340ba4b2887986ba",
+      "type": "add",
+      "after": "c2085cc89d44ded0"
+    },
+    {
+      "type": "edit",
+      "id": "340ba4b2887986ba",
+      "item": {
+        "type": "paragraph",
+        "id": "340ba4b2887986ba",
+        "text": "When you encounter repeated situations that must decide, based on the same criteria, ad-hoc selection doesn't serve you well in incremental development. The problem is that when changes occur in the code base, you need to find all of the previously built instances of this and update them consistently. But the tools available aren't usually very helpful with this. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4e4037ba65350c9d"
+      },
+      "id": "4e4037ba65350c9d",
+      "type": "add",
+      "after": "340ba4b2887986ba"
+    },
+    {
+      "type": "edit",
+      "id": "4e4037ba65350c9d",
+      "item": {
+        "type": "paragraph",
+        "id": "4e4037ba65350c9d",
+        "text": "The most common changes, when doing incremental development, with possibly changing requirements, are (a) adding a new option to an existing set of behaviors, and (b) changing a previously defined behavior. Either the criteria for choice changes or the behavior chosen changes. Now search 20,000 lines of code for all of the necessary updates - if and switch statements. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e1cac55e09a57754"
+      },
+      "id": "e1cac55e09a57754",
+      "type": "add",
+      "after": "4e4037ba65350c9d"
+    },
+    {
+      "type": "edit",
+      "id": "e1cac55e09a57754",
+      "item": {
+        "type": "paragraph",
+        "id": "e1cac55e09a57754",
+        "text": "Of course you want to [[Say It Once]], which isn't hard to do for the behaviors, but is more complex for the choice structure. This is what polymorphic programming is all about. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8df93fdb9b9c759c"
+      },
+      "id": "8df93fdb9b9c759c",
+      "type": "add",
+      "after": "e1cac55e09a57754"
+    },
+    {
+      "type": "edit",
+      "id": "e1cac55e09a57754",
+      "item": {
+        "type": "paragraph",
+        "id": "e1cac55e09a57754",
+        "text": "Of course you want to [[Say It Once]], which isn't hard to do for the behaviors, but is more complex for the choice structure. This is what polymorphic programming is all about. Once you [[Climb Information Hill]] you want to stay at the top, rather than fall down the other side. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "e1cac55e09a57754",
+      "item": {
+        "type": "paragraph",
+        "id": "e1cac55e09a57754",
+        "text": "Of course you want to [[Say It Once]], which isn't hard to do for the behaviors, but is more complex for the choice structure. This is what polymorphic programming is all about. Once you Climb [[Information Hill]] you want to stay at the top, rather than fall down the other side. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "8df93fdb9b9c759c",
+      "item": {
+        "type": "paragraph",
+        "id": "8df93fdb9b9c759c",
+        "text": "<pre>\nif (foo) {\n\n\n\n</pre>"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "8df93fdb9b9c759c",
+      "item": {
+        "type": "paragraph",
+        "id": "8df93fdb9b9c759c",
+        "text": "<pre>\nif (foo) {\n   bar();\n}else{\n   bas();\n}\n</pre>"
+      }
+    },
+    {
+      "type": "remove",
+      "id": "8df93fdb9b9c759c"
+    },
+    {
+      "type": "edit",
+      "id": "340ba4b2887986ba",
+      "item": {
+        "type": "paragraph",
+        "id": "340ba4b2887986ba",
+        "text": "When you encounter repeated situations that must decide, based on the same criteria, ad-hoc selection doesn't serve you well in incremental development. The problem is that when changes occur in the code base, you need to find all of the previously built instances of this and update them consistently. But the tools available aren't usually very helpful with this. And if you miss just one, your program is broken. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "499091d2aa36dbb8"
+      },
+      "id": "499091d2aa36dbb8",
+      "type": "add",
+      "after": "e1cac55e09a57754"
+    },
+    {
+      "type": "move",
+      "order": [
+        "57e3301a4964b9c7",
+        "d747b54fe785f2df",
+        "c2085cc89d44ded0",
+        "340ba4b2887986ba",
+        "4e4037ba65350c9d",
+        "499091d2aa36dbb8",
+        "e1cac55e09a57754"
+      ],
+      "id": "499091d2aa36dbb8"
+    },
+    {
+      "type": "edit",
+      "id": "499091d2aa36dbb8",
+      "item": {
+        "type": "paragraph",
+        "id": "499091d2aa36dbb8",
+        "text": "A third possibility is that you are adding something new that requires the same decision structure. Here a new choice will need to be made at a different place in the program, with new behaviors for the various cases. "
+      }
+    }
+  ]
+}

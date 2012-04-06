@@ -1,0 +1,82 @@
+{
+  "title": "Say It Once",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "1a9fce8512c56365",
+      "text": "A low level coding pattern, from Kent Beck's Smalltalk Best Practice Patterns. "
+    },
+    {
+      "type": "paragraph",
+      "id": "4ec112219cfbce6d",
+      "text": "Say it once implies that when programming you should not repeat code intended to do the same thing. Refactor the code so that identical fragments are brought together. The traditional means of doing this is procedural abstraction, but it goes beyond this. "
+    },
+    {
+      "type": "paragraph",
+      "id": "6e7b0460b2af6d98",
+      "text": "The problem with repeating code is that, if the program changes, all copies must be updated consistently. But sometimes \"identical\" code isn't identical textually, so it can be a somewhat complex problem to solve automatically. "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "id": "fec489aa5c0ce05d",
+      "item": {
+        "title": "Say It Once"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1a9fce8512c56365"
+      },
+      "id": "1a9fce8512c56365",
+      "type": "add"
+    },
+    {
+      "type": "edit",
+      "id": "1a9fce8512c56365",
+      "item": {
+        "type": "paragraph",
+        "id": "1a9fce8512c56365",
+        "text": "A low level coding pattern, from Kent Beck's Smalltalk Best Practice Patterns. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4ec112219cfbce6d"
+      },
+      "id": "4ec112219cfbce6d",
+      "type": "add",
+      "after": "1a9fce8512c56365"
+    },
+    {
+      "type": "edit",
+      "id": "4ec112219cfbce6d",
+      "item": {
+        "type": "paragraph",
+        "id": "4ec112219cfbce6d",
+        "text": "Say it once implies that when programming you should not repeat code intended to do the same thing. Refactor the code so that identical fragments are brought together. The traditional means of doing this is procedural abstraction, but it goes beyond this. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "6e7b0460b2af6d98"
+      },
+      "id": "6e7b0460b2af6d98",
+      "type": "add",
+      "after": "4ec112219cfbce6d"
+    },
+    {
+      "type": "edit",
+      "id": "6e7b0460b2af6d98",
+      "item": {
+        "type": "paragraph",
+        "id": "6e7b0460b2af6d98",
+        "text": "The problem with repeating code is that, if the program changes, all copies must be updated consistently. But sometimes \"identical\" code isn't identical textually, so it can be a somewhat complex problem to solve automatically. "
+      }
+    }
+  ]
+}

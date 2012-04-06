@@ -1,0 +1,82 @@
+{
+  "title": "Revisit Say It Once",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "10fe57f723b1a749",
+      "text": "Procedural abstraction (factoring out a procedure or function) is very helpful in \"Saying it once\", it doesn't capture the whole picture. When all decisions are made in a program using if-statements, the if-statements themselves get replicated. "
+    },
+    {
+      "type": "paragraph",
+      "id": "a532a89fd8be03d9",
+      "text": "When the same decision structure must be used indifferent places in the program, using if-statements doesn't unify very well. You could, I suppose try to capture the whole thing in a \"helper function,\" but it would, in general need a lot of parameters, increasing complexity as not all are needed at every site. "
+    },
+    {
+      "type": "paragraph",
+      "id": "d357b1a6b22864c9",
+      "text": "Polymorphism much more truly satisfies the principle since each \"situation\" is handled by a family of methods, with a separate implementation (and class) for each alternative. To add a new situation, add a new method to each class. To add a new alternative, add a new class, implementing all the methods, perhaps with default implementations for some of them. "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "id": "3e8b040521d20e63",
+      "item": {
+        "title": "Revisit Say It Once"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "10fe57f723b1a749"
+      },
+      "id": "10fe57f723b1a749",
+      "type": "add"
+    },
+    {
+      "type": "edit",
+      "id": "10fe57f723b1a749",
+      "item": {
+        "type": "paragraph",
+        "id": "10fe57f723b1a749",
+        "text": "Procedural abstraction (factoring out a procedure or function) is very helpful in \"Saying it once\", it doesn't capture the whole picture. When all decisions are made in a program using if-statements, the if-statements themselves get replicated. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a532a89fd8be03d9"
+      },
+      "id": "a532a89fd8be03d9",
+      "type": "add",
+      "after": "10fe57f723b1a749"
+    },
+    {
+      "type": "edit",
+      "id": "a532a89fd8be03d9",
+      "item": {
+        "type": "paragraph",
+        "id": "a532a89fd8be03d9",
+        "text": "When the same decision structure must be used indifferent places in the program, using if-statements doesn't unify very well. You could, I suppose try to capture the whole thing in a \"helper function,\" but it would, in general need a lot of parameters, increasing complexity as not all are needed at every site. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d357b1a6b22864c9"
+      },
+      "id": "d357b1a6b22864c9",
+      "type": "add",
+      "after": "a532a89fd8be03d9"
+    },
+    {
+      "type": "edit",
+      "id": "d357b1a6b22864c9",
+      "item": {
+        "type": "paragraph",
+        "id": "d357b1a6b22864c9",
+        "text": "Polymorphism much more truly satisfies the principle since each \"situation\" is handled by a family of methods, with a separate implementation (and class) for each alternative. To add a new situation, add a new method to each class. To add a new alternative, add a new class, implementing all the methods, perhaps with default implementations for some of them. "
+      }
+    }
+  ]
+}

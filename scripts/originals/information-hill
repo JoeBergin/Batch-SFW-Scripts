@@ -1,0 +1,123 @@
+{
+  "title": "Information Hill",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "85fb10fad84c60b1",
+      "text": "When you execute an if statement (or similar), your program gains information. You climb information hill. Inside the structure the program \"knows\" something it didn't know previously. The problem is that after control exits the structure the information is lost. The typical solution to this is to set a \"flag\" to capture the information gained. A flag is just a multi valued variable, depending on the number of choices. Now you can just test the value of the flag, rather than re-executing the selection statement. "
+    },
+    {
+      "type": "paragraph",
+      "id": "e5b081570b28eb25",
+      "text": "Polymorphism just changes the flag into an object which can itself have behavior. This is a big idea. "
+    },
+    {
+      "type": "paragraph",
+      "id": "c411b9d59e13c99b",
+      "text": "A flag traditionally captures the state of a computation \"as it WAS\", not as it \"IS\". Sometimes this is appropriate. You execute choice criteria based on some current values of things and capture that in the flag. If the values change you may want to work in future based on the old values (captured in the flag) or the new values, which the flag doesn't help you with, as it captured a particular state. "
+    },
+    {
+      "type": "paragraph",
+      "id": "f6b832b0834c05f0",
+      "text": "But, the flag still needs to be checked in future. So if statements lead you to write more if statements, and so on. See [[War Story One]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "id": "f2ac6e70bb6ede5d",
+      "item": {
+        "title": "Information Hill"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "85fb10fad84c60b1"
+      },
+      "id": "85fb10fad84c60b1",
+      "type": "add"
+    },
+    {
+      "type": "edit",
+      "id": "85fb10fad84c60b1",
+      "item": {
+        "type": "paragraph",
+        "id": "85fb10fad84c60b1",
+        "text": "When you execute an if statement (or similar), your program gains information. You climb information hill. Inside the structure the program \"knows\" something it didn't know previously. The problem is that after control exits the structure the information is lost. The typical solution to this is to set a \"flag\" to capture the information gained. A flag is just a multi valued variable, depending on the number of choices. Now you can just test the value of the flag, rather than re-executing the selection statement. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e5b081570b28eb25"
+      },
+      "id": "e5b081570b28eb25",
+      "type": "add",
+      "after": "85fb10fad84c60b1"
+    },
+    {
+      "type": "edit",
+      "id": "e5b081570b28eb25",
+      "item": {
+        "type": "paragraph",
+        "id": "e5b081570b28eb25",
+        "text": "Polymorphism just changes the flag into an object which can itself have behavior. This is a big idea. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c411b9d59e13c99b"
+      },
+      "id": "c411b9d59e13c99b",
+      "type": "add",
+      "after": "e5b081570b28eb25"
+    },
+    {
+      "type": "edit",
+      "id": "c411b9d59e13c99b",
+      "item": {
+        "type": "paragraph",
+        "id": "c411b9d59e13c99b",
+        "text": "A flag traditionally captures the state of a computation \"as it WAS\", not as it \"IS\". Sometimes this is appropriate. You execute choice criteria based on some current values of things and capture that in the flag. If the values change you may want to work in future based on the old values (captured in the flag) or the new values, which the flag doesn't help you with, as it captured a particular state. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f6b832b0834c05f0"
+      },
+      "id": "f6b832b0834c05f0",
+      "type": "add",
+      "after": "c411b9d59e13c99b"
+    },
+    {
+      "type": "edit",
+      "id": "f6b832b0834c05f0",
+      "item": {
+        "type": "paragraph",
+        "id": "f6b832b0834c05f0",
+        "text": "But, the flag still needs to be checked in future. So if statements lead you to write more if statements, and so on. See [[War Story 1]]"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "f6b832b0834c05f0",
+      "item": {
+        "type": "paragraph",
+        "id": "f6b832b0834c05f0",
+        "text": "But, the flag still needs to be checked in future. So if statements lead you to write more if statements, and so on. See [[War Story 1]] [[War Story One]]"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "f6b832b0834c05f0",
+      "item": {
+        "type": "paragraph",
+        "id": "f6b832b0834c05f0",
+        "text": "But, the flag still needs to be checked in future. So if statements lead you to write more if statements, and so on. See [[War Story One]]"
+      }
+    }
+  ]
+}
