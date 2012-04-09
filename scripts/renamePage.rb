@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 require 'rubygems'
 require 'json'
 
@@ -85,6 +86,17 @@ def summary
 	end
 end
 
+def warn s
+	puts "#######  " + s
+end
+
+def numberOfWords title
+	ct = 0
+	title.each_byte do |c|
+		ct +=1 if c.chr.downcase != c.chr
+	end
+	return ct
+end
 
 @original = ''
 @newName = ''
@@ -94,6 +106,9 @@ end
 if ARGV.length == 2
 	@original = ARGV[0]
 	@newName = ARGV[1]
+    if numberOfWords(@newName) <= 1
+    	warn '"' + @newName + '"' + " is a single word or has no caps. Consider multi-word titles."
+    end
 else
 	puts 'usage: renamePage originalName newName'
 	exit

@@ -1,0 +1,215 @@
+{
+  "title": "Consequences",
+  "journal": [
+    {
+      "id": "125a4e69b61572af",
+      "type": "create",
+      "item": {
+        "title": "Consequences"
+      }
+    },
+    {
+      "id": "e3581e1f87be945c",
+      "type": "add",
+      "item": {
+        "id": "e3581e1f87be945c",
+        "type": "factory"
+      }
+    },
+    {
+      "id": "e3581e1f87be945c",
+      "type": "edit",
+      "item": {
+        "text": "It is possible, using polymorphism (along with recursion) to write a complex program with cyclomatic complexity zero. No internal logic structure to any method anywhere visible in the program (outside the language's standard libraries). ",
+        "id": "e3581e1f87be945c",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "e3581e1f87be945c",
+      "id": "28e56fea5c421a50",
+      "type": "add",
+      "item": {
+        "id": "28e56fea5c421a50",
+        "type": "factory"
+      }
+    },
+    {
+      "id": "28e56fea5c421a50",
+      "type": "edit",
+      "item": {
+        "text": "[[Joe Bergin]] has built demonstration programs for calculators and turing machines this way. The turing machine, to be honest, relies on the HashMap from the Java libraries, which is built with ad-hoc selection, of course. Joe has never tried to build a Polymorphic hash map, but in the \"visible\" program, there is no structure other than sending messages to objects. ",
+        "id": "28e56fea5c421a50",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "28e56fea5c421a50",
+      "id": "c11e12da95590184",
+      "type": "add",
+      "item": {
+        "id": "c11e12da95590184",
+        "type": "factory"
+      }
+    },
+    {
+      "id": "c11e12da95590184",
+      "type": "edit",
+      "item": {
+        "text": "Moreover, these programs have the following characteristics. (a) Each class is simple: only a few methods (maybe two or three). (b) Each method is simple: only a few statements (maybe one or two). But a Turing Machine is still a pretty complex thing. So where did the complexity go? ",
+        "id": "c11e12da95590184",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "28e56fea5c421a50",
+      "type": "edit",
+      "item": {
+        "text": "[[Joe Bergin]] has built demonstration programs for calculators and Turing Machines this way. The Turing Machine, to be honest, relies on the HashMap from the Java libraries, which is built with ad-hoc selection, of course. Joe has never tried to build a Polymorphic hash map, but in the \"visible\" program, there is no structure other than sending messages to objects. ",
+        "id": "28e56fea5c421a50",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "c11e12da95590184",
+      "id": "1ebac910d5be2abb",
+      "type": "add",
+      "item": {
+        "id": "1ebac910d5be2abb",
+        "type": "factory"
+      }
+    },
+    {
+      "id": "1ebac910d5be2abb",
+      "type": "edit",
+      "item": {
+        "text": "Thinking....Thinking...Thinking...",
+        "id": "1ebac910d5be2abb",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "1ebac910d5be2abb",
+      "id": "a022b6177a839ac5",
+      "type": "add",
+      "item": {
+        "id": "a022b6177a839ac5",
+        "type": "factory"
+      }
+    },
+    {
+      "id": "a022b6177a839ac5",
+      "type": "edit",
+      "item": {
+        "text": "Ah, the complexity is in the interactions between objects. Therefore...",
+        "id": "a022b6177a839ac5",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "a022b6177a839ac5",
+      "id": "b37e0903509bc6db",
+      "type": "add",
+      "item": {
+        "id": "b37e0903509bc6db",
+        "type": "factory"
+      }
+    },
+    {
+      "id": "b37e0903509bc6db",
+      "type": "edit",
+      "item": {
+        "text": "Well, therefore, you have a lot of objects interacting in complex ways. And that doesn't, by itself, make a program easy to understand. The program also has lots of classes and interfaces, as you will see from the rest of this essay. Many (many) of the classes are inner classes to some other, so each \"topmost\" class is complex because it has a lot of simple parts. ",
+        "id": "b37e0903509bc6db",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "b37e0903509bc6db",
+      "id": "c729f9df12762274",
+      "type": "add",
+      "item": {
+        "id": "c729f9df12762274",
+        "type": "factory"
+      }
+    },
+    {
+      "id": "c729f9df12762274",
+      "type": "edit",
+      "item": {
+        "text": "But if you decompose an automobile to its lowest level parts, they are also mostly simple. So we are not without skills in understanding such things. ",
+        "id": "c729f9df12762274",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "c729f9df12762274",
+      "id": "5ca503a44f0d7e29",
+      "type": "add",
+      "item": {
+        "id": "5ca503a44f0d7e29",
+        "type": "factory"
+      }
+    },
+    {
+      "id": "5ca503a44f0d7e29",
+      "type": "edit",
+      "item": {
+        "text": "One difference between the way a traditional programmer might think is this. When a C programmer faces local complexity, they bring procedural abstraction to bear. \"Write a helper function.\" When a polymorphic programmer faces such situations, she is more likely to apply a higher level abstraction. \"Write a helper class.\"",
+        "id": "5ca503a44f0d7e29",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "e3581e1f87be945c",
+      "type": "edit",
+      "item": {
+        "text": "It is possible, using polymorphism (along with recursion) to write a complex program with cyclomatic complexity one. No internal logic structure to any method anywhere visible in the program (outside the language's standard libraries). ",
+        "id": "e3581e1f87be945c",
+        "type": "paragraph"
+      }
+    }
+  ],
+  "story": [
+    {
+      "text": "It is possible, using polymorphism (along with recursion) to write a complex program with cyclomatic complexity one. No internal logic structure to any method anywhere visible in the program (outside the language's standard libraries). ",
+      "id": "e3581e1f87be945c",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Gilly Gil]] has built demonstration programs for calculators and Turing Machines this way. The Turing Machine, to be honest, relies on the HashMap from the Java libraries, which is built with ad-hoc selection, of course. Joe has never tried to build a Polymorphic hash map, but in the \"visible\" program, there is no structure other than sending messages to objects. ",
+      "id": "28e56fea5c421a50",
+      "type": "paragraph"
+    },
+    {
+      "text": "Moreover, these programs have the following characteristics. (a) Each class is simple: only a few methods (maybe two or three). (b) Each method is simple: only a few statements (maybe one or two). But a Turing Machine is still a pretty complex thing. So where did the complexity go? ",
+      "id": "c11e12da95590184",
+      "type": "paragraph"
+    },
+    {
+      "text": "Thinking....Thinking...Thinking...",
+      "id": "1ebac910d5be2abb",
+      "type": "paragraph"
+    },
+    {
+      "text": "Ah, the complexity is in the interactions between objects. Therefore...",
+      "id": "a022b6177a839ac5",
+      "type": "paragraph"
+    },
+    {
+      "text": "Well, therefore, you have a lot of objects interacting in complex ways. And that doesn't, by itself, make a program easy to understand. The program also has lots of classes and interfaces, as you will see from the rest of this essay. Many (many) of the classes are inner classes to some other, so each \"topmost\" class is complex because it has a lot of simple parts. ",
+      "id": "b37e0903509bc6db",
+      "type": "paragraph"
+    },
+    {
+      "text": "But if you decompose an automobile to its lowest level parts, they are also mostly simple. So we are not without skills in understanding such things. ",
+      "id": "c729f9df12762274",
+      "type": "paragraph"
+    },
+    {
+      "text": "One difference between the way a traditional programmer might think is this. When a C programmer faces local complexity, they bring procedural abstraction to bear. \"Write a helper function.\" When a polymorphic programmer faces such situations, she is more likely to apply a higher level abstraction. \"Write a helper class.\"",
+      "id": "5ca503a44f0d7e29",
+      "type": "paragraph"
+    }
+  ]
+}

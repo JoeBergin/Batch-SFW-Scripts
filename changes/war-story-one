@@ -1,0 +1,58 @@
+{
+  "title": "War Story One",
+  "journal": [
+    {
+      "id": "0178aeb2b7bdedaf",
+      "type": "create",
+      "item": {
+        "title": "War Story One"
+      }
+    },
+    {
+      "id": "a5aaec2224fb5524",
+      "type": "add",
+      "item": {
+        "text": "[[Joe Bergin]] was once advising a team learning agile software development. It was in a big and important company. The project was mission critical. Since he was advising on process, he promised himself to never look at the actual code. But one day he was asked to give advice by one of the developers...",
+        "id": "a5aaec2224fb5524",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "a5aaec2224fb5524",
+      "id": "8c7ee24a80ae965c",
+      "type": "add",
+      "item": {
+        "text": "He was shown one key method of about a page and a half of code. It had a very complex logic structure: nested selection, looping, etc. The programmer was known to be skilled. Joe commented that the programmer must be a lot smarter than Joe himself, since he (Joe) would never be able to read/understand/extend such code. A much better approach for a coach than saying \"This is crap.\" ",
+        "id": "8c7ee24a80ae965c",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "8c7ee24a80ae965c",
+      "id": "71e4d87760c1023b",
+      "type": "add",
+      "item": {
+        "text": "But the developer's response was instructive: \"Actually I'm having a lot of trouble with it myself.\" But he was led to this structure in small steps that just made it worse and worse. The solution, really, is to take different small steps that lead you to a better place: [[Polymorphic Programming]]",
+        "id": "71e4d87760c1023b",
+        "type": "paragraph"
+      }
+    }
+  ],
+  "story": [
+    {
+      "text": "[[Gilly Gil]] was once advising a team learning agile software development. It was in a big and important company. The project was mission critical. Since he was advising on process, he promised himself to never look at the actual code. But one day he was asked to give advice by one of the developers...",
+      "id": "a5aaec2224fb5524",
+      "type": "paragraph"
+    },
+    {
+      "text": "He was shown one key method of about a page and a half of code. It had a very complex logic structure: nested selection, looping, etc. The programmer was known to be skilled. Joe commented that the programmer must be a lot smarter than Joe himself, since he (Joe) would never be able to read/understand/extend such code. A much better approach for a coach than saying \"This is crap.\" ",
+      "id": "8c7ee24a80ae965c",
+      "type": "paragraph"
+    },
+    {
+      "text": "But the developer's response was instructive: \"Actually I'm having a lot of trouble with it myself.\" But he was led to this structure in small steps that just made it worse and worse. The solution, really, is to take different small steps that lead you to a better place: [[Polymorphic Programming]]",
+      "id": "71e4d87760c1023b",
+      "type": "paragraph"
+    }
+  ]
+}

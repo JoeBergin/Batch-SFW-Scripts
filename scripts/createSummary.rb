@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 require 'rubygems'
 require 'json'
 
@@ -40,6 +41,18 @@ end
 def summarize
 	page @title, @summary
 end
+def warn s
+	puts "#######  " + s
+end
+
+def numberOfWords title
+	ct = 0
+	title.each_byte do |c|
+		ct +=1 if c.chr.downcase != c.chr
+	end
+	return ct
+end
+
 
 @source = 'originals'
 @dest = '../pages/'
@@ -52,6 +65,15 @@ for i in 0...ARGV.length
 		@dest = ARGV[i+1]
 	elsif ARGV[i] == '-t'
 		@title = ARGV[i+1]
+		if numberOfWords(@title) <= 1
+			warn '"' + @title + '"' + " is a single word or has no caps. Consider multi-word titles."
+		end
+	elsif ARGV[i] == '-h'
+		puts '-s path to the source directory'
+		puts '-d path to the destination directory'
+		puts '-t \'name\' to produce a summary with given name'
+		puts '-h produces this text'
+		exit
 	end
 end
 
