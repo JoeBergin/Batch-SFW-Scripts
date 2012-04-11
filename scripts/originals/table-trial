@@ -1,0 +1,159 @@
+{
+  "title": "Table Trial",
+  "journal": [
+    {
+      "id": "220ccbf615bc1485",
+      "type": "create",
+      "item": {
+        "title": "Table Trial"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "19b610bedd64f71c",
+      "item": {
+        "text": "<ul>\n  <li> onzer  </li>\n  <li> twozer</li>\n  <li> treezer </li>\n\t <ul>\n\t  <li> foo </li>\n\t  <li> bar </li>\n\t  <li> bas </li>\n\t </ul>\n <li> quatrezer  </li>\n  <li>funfzer </li>  \n</ul>",
+        "id": "19b610bedd64f71c",
+        "type": "paragraph"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b706504538f06dbf"
+      },
+      "id": "b706504538f06dbf",
+      "type": "add",
+      "after": "19b610bedd64f71c"
+    },
+    {
+      "type": "move",
+      "order": [
+        "3ba42e00488ad37f",
+        "c8fec11d1e0ff72c",
+        "4fd71bc9e2b90499",
+        "b706504538f06dbf",
+        "19b610bedd64f71c"
+      ],
+      "id": "b706504538f06dbf"
+    },
+    {
+      "type": "edit",
+      "id": "b706504538f06dbf",
+      "item": {
+        "type": "paragraph",
+        "id": "b706504538f06dbf",
+        "text": "<split Mumble Bar />"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "49ba9e7b37393967"
+      },
+      "id": "49ba9e7b37393967",
+      "type": "add",
+      "after": "19b610bedd64f71c"
+    },
+    {
+      "type": "edit",
+      "id": "49ba9e7b37393967",
+      "item": {
+        "type": "paragraph",
+        "id": "49ba9e7b37393967",
+        "text": "<split Mumble Bar />"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e87d53b4d88c9f4d"
+      },
+      "id": "e87d53b4d88c9f4d",
+      "type": "add",
+      "after": "49ba9e7b37393967"
+    },
+    {
+      "type": "move",
+      "order": [
+        "3ba42e00488ad37f",
+        "c8fec11d1e0ff72c",
+        "4fd71bc9e2b90499",
+        "b706504538f06dbf",
+        "e87d53b4d88c9f4d",
+        "19b610bedd64f71c",
+        "49ba9e7b37393967"
+      ],
+      "id": "e87d53b4d88c9f4d"
+    },
+    {
+      "type": "edit",
+      "id": "e87d53b4d88c9f4d",
+      "item": {
+        "type": "paragraph",
+        "id": "e87d53b4d88c9f4d",
+        "text": "<split>Mumble Bar</split>"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "96679c40a77779f1"
+      },
+      "id": "96679c40a77779f1",
+      "type": "add",
+      "after": "49ba9e7b37393967"
+    },
+    {
+      "type": "edit",
+      "id": "96679c40a77779f1",
+      "item": {
+        "type": "paragraph",
+        "id": "96679c40a77779f1",
+        "text": "Foozle"
+      }
+    }
+  ],
+  "story": [
+    {
+      "text": "<h1> mumble </h1>",
+      "id": "3ba42e00488ad37f",
+      "type": "paragraph"
+    },
+    {
+      "text": "<span><h1> jar </h1></span>",
+      "id": "c8fec11d1e0ff72c",
+      "type": "paragraph"
+    },
+    {
+      "text": "\n<table width=\"80%\" border=\"1\" align=\"center\">\n  <tbody>\n    <tr>\n      <td>One  | two | three </td>\n    </tr>\n  </tbody>\n</table>\n",
+      "id": "4fd71bc9e2b90499",
+      "type": "paragraph"
+    },
+    {
+      "type": "paragraph",
+      "id": "b706504538f06dbf",
+      "text": "<split>Mumble Bar</split>"
+    },
+    {
+      "text": " jar's to you.",
+      "id": "c8fec11d1e0ff72c",
+      "type": "paragraph"
+    },
+    {
+      "type": "paragraph",
+      "id": "e87d53b4d88c9f4d",
+      "text": "<split>Mumble Foo</split>"
+    },
+    {
+      "text": "<ul>\n  <li> onzer  </li>\n  <li> twozer</li>\n  <li> treezer </li>\n\t <ul>\n\t  <li> foo </li>\n\t  <li> bar </li>\n\t  <li> bas </li>\n\t </ul>\n <li> quatrezer  </li>\n  <li>funfzer </li>  \n</ul>",
+      "id": "19b610bedd64f71c",
+      "type": "paragraph"
+    },
+    {
+      "type": "paragraph",
+      "id": "96679c40a77779f1",
+      "text": "Foozle"
+    }
+  ]
+}

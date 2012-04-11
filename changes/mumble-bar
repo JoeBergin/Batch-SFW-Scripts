@@ -1,0 +1,124 @@
+{
+  "title": "Mumble Bar",
+  "story": [
+    {
+      "text": " jar's to you.",
+      "id": "c8fec11d1e0ff72c",
+      "type": "paragraph"
+    }
+  ],
+  "journal": [
+    {
+      "id": "220ccbf615bc1485",
+      "type": "create",
+      "item": {
+        "title": "Table Trial"
+      }
+    },
+    {
+      "id": "19b610bedd64f71c",
+      "type": "edit",
+      "item": {
+        "text": "<ul>\n  <li> onzer  </li>\n  <li> twozer</li>\n  <li> treezer </li>\n\t <ul>\n\t  <li> foo </li>\n\t  <li> bar </li>\n\t  <li> bas </li>\n\t </ul>\n <li> quatrezer  </li>\n  <li>funfzer </li>  \n</ul>",
+        "id": "19b610bedd64f71c",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "19b610bedd64f71c",
+      "id": "b706504538f06dbf",
+      "type": "add",
+      "item": {
+        "id": "b706504538f06dbf",
+        "type": "factory"
+      }
+    },
+    {
+      "id": "b706504538f06dbf",
+      "order": [
+        "3ba42e00488ad37f",
+        "c8fec11d1e0ff72c",
+        "4fd71bc9e2b90499",
+        "b706504538f06dbf",
+        "19b610bedd64f71c"
+      ],
+      "type": "move"
+    },
+    {
+      "id": "b706504538f06dbf",
+      "type": "edit",
+      "item": {
+        "text": "<split Mumble Bar />",
+        "id": "b706504538f06dbf",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "19b610bedd64f71c",
+      "id": "49ba9e7b37393967",
+      "type": "add",
+      "item": {
+        "id": "49ba9e7b37393967",
+        "type": "factory"
+      }
+    },
+    {
+      "id": "49ba9e7b37393967",
+      "type": "edit",
+      "item": {
+        "text": "<split Mumble Bar />",
+        "id": "49ba9e7b37393967",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "49ba9e7b37393967",
+      "id": "e87d53b4d88c9f4d",
+      "type": "add",
+      "item": {
+        "id": "e87d53b4d88c9f4d",
+        "type": "factory"
+      }
+    },
+    {
+      "id": "e87d53b4d88c9f4d",
+      "order": [
+        "3ba42e00488ad37f",
+        "c8fec11d1e0ff72c",
+        "4fd71bc9e2b90499",
+        "b706504538f06dbf",
+        "e87d53b4d88c9f4d",
+        "19b610bedd64f71c",
+        "49ba9e7b37393967"
+      ],
+      "type": "move"
+    },
+    {
+      "id": "e87d53b4d88c9f4d",
+      "type": "edit",
+      "item": {
+        "text": "<split>Mumble Bar</split>",
+        "id": "e87d53b4d88c9f4d",
+        "type": "paragraph"
+      }
+    },
+    {
+      "after": "49ba9e7b37393967",
+      "id": "96679c40a77779f1",
+      "type": "add",
+      "item": {
+        "id": "96679c40a77779f1",
+        "type": "factory"
+      }
+    },
+    {
+      "id": "96679c40a77779f1",
+      "type": "edit",
+      "item": {
+        "text": "Foozle",
+        "id": "96679c40a77779f1",
+        "type": "paragraph"
+      }
+    }
+  ]
+}
