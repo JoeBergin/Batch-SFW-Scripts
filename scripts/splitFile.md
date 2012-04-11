@@ -26,12 +26,12 @@
 
 <p>Run it like this (assuming you've made it executable:</p>
 
-<p>cd to the scripts directory:
+<p>cd to the scripts directory:<br/>
 ./splitFile 'name of the source'</p>
 
 <p>The name of the source can be either a filename (of a file in the originals directory) or a page title. Either works. Do not include the path to originals. </p>
 
-<p>For example, both work:</p>
+<p>For example, both of these work:</p>
 
-<p>Silver:scripts jbergin$ ./splitFile.rb "table-trial"
+<p>Silver:scripts jbergin$ ./splitFile.rb "table-trial" <br/>
 Silver:scripts jbergin$ ./splitFile.rb "Table Trial"</p>
