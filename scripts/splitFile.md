@@ -10,11 +10,11 @@
 
 <p>Somewhere in the file put the following. It should be in a paragraph by itself since the paragraph that contains it is lost in translation. </p>
 
-<p><split>Part One</split></p>
+<p>&lt;split>Part One&lt;/split></p>
 
 <p>and later, another paragraph containing</p>
 
-<p><split>Part Two</split> </p>
+<p>&lt;split>Part Two&lt;/split> </p>
 
 <p>(It requires the tag names in lower case now - FIXED)</p>
 
