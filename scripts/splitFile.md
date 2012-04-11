@@ -16,9 +16,11 @@
 
 <p><split>Part Two</split> </p>
 
-<p>(It requires the tag names in lower case now)</p>
+<p>(It requires the tag names in lower case now - FIXED)</p>
 
 <p>You will then get three files: my-master, part-one, and part-two, with the three pages. The first file contains every paragraph up to (not including) the paragraph containing the first split "tag". The second file everything in paragraphs between the two splits (but not the paragraphs with the tags) and the third file contains every paragraph past the paragraph with the second split.</p>
+
+<p>You are encouraged to use good names, nowever. They should be multi-word, intention revealing names that will work well across a federation of wikis. 
 
 <p>It does not modify any paragraph, but loses the ones with the split tags. It does not modify the journal, but copies it into each created page. </p>
 

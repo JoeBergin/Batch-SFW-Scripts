@@ -12,6 +12,14 @@ def slug title
   title.gsub(/\s/, '-').gsub(/[^A-Za-z0-9-]/, '').downcase()
 end
 
+def numberOfWords title
+	ct = 0
+	title.each_byte do |c|
+		ct +=1 if c.chr.downcase != c.chr
+	end
+	return ct
+end
+
 def splitFile doc
 # gets the official name of the page and also splits it
 	begin
@@ -26,7 +34,7 @@ def splitFile doc
 				newStory << para
 			else
 				text = para['text']
-				name = text.match(/<\s*split\s*>(.*?)<\s*\/split\s*>/)
+				name = text.match(/<\s*[Ss][Pp][Ll][Ii][Tt]\s*>(.*?)<\s*\/[Ss][Pp][Ll][Ii][Tt]\s*>/)
 				name = name[1] unless name == nil	
 				if name != nil
 					json['story'] = newStory
@@ -34,6 +42,9 @@ def splitFile doc
 					page currentTitle, json
 					newStory = []
 					currentTitle = name.strip
+					if numberOfWords(currentTitle) <= 1
+						warn '"' + currentTitle + '"' + " is a single word or has missing uppercase letters. Consider good multi-word titles."
+					end
 				else
 					newStory << para 
 				end
@@ -43,7 +54,7 @@ def splitFile doc
 		json['story'] = newStory
 		page currentTitle, json
 	rescue
-		puts 'No page with this title.'
+		puts 'Parse error.'
 	end
 end
 
@@ -68,7 +79,7 @@ end
 begin
 	filename = slug @original
 	doc = IO.read("#{@directory}/#{filename}" )
-	splitFile doc #, @original
+	splitFile doc 
 rescue
 	puts 'No Page with Title: ' + @original
 end
