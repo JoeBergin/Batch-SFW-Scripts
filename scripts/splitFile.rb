@@ -31,6 +31,7 @@ def markRemove id, which
 	}
 end
 
+# to record the splitter paragraphs
 def recordInAll id
 	0.upto(@toRemove.length - 1) { |i|
 			@toRemove[i] << id
@@ -38,15 +39,14 @@ def recordInAll id
 end
 
 def splitFile doc
-# gets the official name of the page and also splits it
+# gets the official name of the page and also splits file at splitter paragraphs
 	begin
 		json = JSON.parse(doc)
-		#check it isn't a fork
 		journal = json['journal'] # an array of journal entries		
-		currentTitle = json['title']
+		originalTitle = currentTitle = json['title']
 		story = json['story']
 		newStory = []
-		pages = []
+		pages = [] # will save generated  pages until the end
 		whichPart = 0
 		story.each do |para|
 			if  para['type'] != "paragraph"
@@ -56,13 +56,22 @@ def splitFile doc
 				text = para['text']
 				name = text.match(/<\s*[Ss][Pp][Ll][Ii][Tt]\s*>(.*?)<\s*\/[Ss][Pp][Ll][Ii][Tt]\s*>/)
 				name = name[1] unless name == nil	
-				if name != nil
-					recordInAll para['id']
+				if name != nil # in a splitter paragraph
+					recordInAll para['id'] # removing the splitter para
 					json['story'] = newStory
 					json['title'] = currentTitle
 					json['journal'] = journal.clone
-					pages << json.clone
+=begin
+					if whichPart > 0 # first part isn't a fork
+						json['journal'] << {
+							'type' => 'fork',
+							'site' => originalTitle  # what should this be??
+						}
+					end
+=end
+					pages << json.clone # save the page
 					whichPart += 1
+					# everything removed so far is also removed from next part
 					@toRemove << @toRemove[@toRemove.length - 1].clone
 					newStory = []
 					currentTitle = name.strip
@@ -78,7 +87,15 @@ def splitFile doc
 		json['title'] = currentTitle
 		json['story'] = newStory
 		json['journal'] = journal.clone
-		pages << json.clone
+=begin
+		if whichPart > 0
+			json['journal'] << {
+				'type' => 'fork',
+				'site' => originalTitle  # what should this be??
+			}
+		end
+=end
+		pages << json.clone # save the page
 		count = 0
 		# record the removals in the journals and output the pages
 		pages.each do |onePage|

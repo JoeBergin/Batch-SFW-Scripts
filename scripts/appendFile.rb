@@ -25,10 +25,11 @@ def appendFile base, merge
 				'after' => lastId,
 				'id' => para['id'],
 				'type' => "add",
-				"item" => {
-						'id' => para['id'],
-						'type' => para['type']
-						}
+				"item" => para
+					#	{
+					#	'id' => para['id'],
+					#	'type' => para['type']
+					#	}
 				}
 			lastId = para['id']
 			baseJson['journal'] << entry
