@@ -2,7 +2,7 @@
 
 <p>splitFile will split one json file into parts. The original must be in the originals directory (./originals) and the results will be put into ../changes.</p>
 
-<p>The journal of the original is preserved in all of the parts. </p>
+<p>The journal of the original is preserved in all of the parts, with updates for paragraphs "removed" from each part. </p>
 
 <p>The original file is not modified. However a new file with the same name and Title will be created in the changes directory. </p>
 
@@ -22,7 +22,9 @@
 
 <p>You are encouraged to use good names, nowever. They should be multi-word, intention revealing names that will work well across a federation of wikis. 
 
-<p>It does not modify any paragraph, but loses the ones with the split tags. It does not modify the journal, but copies it into each created page. </p>
+<p>It does not modify any paragraph, but loses the ones with the split tags. It updates the journal for each created file. First, it copies the original into each created page and then includes a remove entry for each paragraph that doesn't appear in this file. </p>
+
+<p>The "split paragraphs" were recorded in the journals when added, and the remove is also recorded.</p>
 
 <p>Run it like this (assuming you've made it executable:</p>
 

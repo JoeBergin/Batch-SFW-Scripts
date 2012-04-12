@@ -1,22 +1,5 @@
 {
   "title": "Table Trial",
-  "story": [
-    {
-      "text": "<h1> mumble </h1>",
-      "id": "3ba42e00488ad37f",
-      "type": "paragraph"
-    },
-    {
-      "text": "<span><h1> jar </h1></span>",
-      "id": "c8fec11d1e0ff72c",
-      "type": "paragraph"
-    },
-    {
-      "text": "\n<table width=\"80%\" border=\"1\" align=\"center\">\n  <tbody>\n    <tr>\n      <td>One  | two | three </td>\n    </tr>\n  </tbody>\n</table>\n",
-      "id": "4fd71bc9e2b90499",
-      "type": "paragraph"
-    }
-  ],
   "journal": [
     {
       "id": "220ccbf615bc1485",
@@ -76,7 +59,7 @@
       "id": "49ba9e7b37393967",
       "type": "edit",
       "item": {
-        "text": "<split Mumble Bar />",
+        "text": " eeks <split Mumble Bar />",
         "id": "49ba9e7b37393967",
         "type": "paragraph"
       }
@@ -129,6 +112,43 @@
         "id": "96679c40a77779f1",
         "type": "paragraph"
       }
+    },
+    {
+      "id": "b706504538f06dbf",
+      "type": "remove"
+    },
+    {
+      "id": "c8fec11d1e0ff72c",
+      "type": "remove"
+    },
+    {
+      "id": "e87d53b4d88c9f4d",
+      "type": "remove"
+    },
+    {
+      "id": "19b610bedd64f71c",
+      "type": "remove"
+    },
+    {
+      "id": "96679c40a77779f1",
+      "type": "remove"
+    }
+  ],
+  "story": [
+    {
+      "text": "<h1> mumble </h1>",
+      "id": "3ba42e00488ad37f",
+      "type": "paragraph"
+    },
+    {
+      "text": "<span><h1> jar </h1></span>",
+      "id": "c8fec11d1e0ff72c",
+      "type": "paragraph"
+    },
+    {
+      "text": "\n<table width=\"80%\" border=\"1\" align=\"center\">\n  <tbody>\n    <tr>\n      <td>One  | two | three </td>\n    </tr>\n  </tbody>\n</table>\n",
+      "id": "4fd71bc9e2b90499",
+      "type": "paragraph"
     }
   ]
 }

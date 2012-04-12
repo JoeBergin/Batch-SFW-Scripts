@@ -20,6 +20,23 @@ def numberOfWords title
 	return ct
 end
 
+@toRemove = [[],[]]
+
+# paragraph ids to remove from each journal
+def markRemove id, which
+	0.upto(@toRemove.length - 1) { |i|
+		if i != which
+			@toRemove[i] << id
+		end
+	}
+end
+
+def recordInAll id
+	0.upto(@toRemove.length - 1) { |i|
+			@toRemove[i] << id
+	}
+end
+
 def splitFile doc
 # gets the official name of the page and also splits it
 	begin
@@ -29,17 +46,24 @@ def splitFile doc
 		currentTitle = json['title']
 		story = json['story']
 		newStory = []
+		pages = []
+		whichPart = 0
 		story.each do |para|
 			if  para['type'] != "paragraph"
 				newStory << para
+				markRemove para['id'], whichPart
 			else
 				text = para['text']
 				name = text.match(/<\s*[Ss][Pp][Ll][Ii][Tt]\s*>(.*?)<\s*\/[Ss][Pp][Ll][Ii][Tt]\s*>/)
 				name = name[1] unless name == nil	
 				if name != nil
+					recordInAll para['id']
 					json['story'] = newStory
 					json['title'] = currentTitle
-					page currentTitle, json
+					json['journal'] = journal.clone
+					pages << json.clone
+					whichPart += 1
+					@toRemove << @toRemove[@toRemove.length - 1].clone
 					newStory = []
 					currentTitle = name.strip
 					if numberOfWords(currentTitle) <= 1
@@ -47,12 +71,26 @@ def splitFile doc
 					end
 				else
 					newStory << para 
+					markRemove para['id'], whichPart
 				end
 			end
 		end
 		json['title'] = currentTitle
 		json['story'] = newStory
-		page currentTitle, json
+		json['journal'] = journal.clone
+		pages << json.clone
+		count = 0
+		# record the removals in the journals and output the pages
+		pages.each do |onePage|
+			@toRemove[count].each do |id|
+				onePage['journal'] << {
+					'type' => 'remove',
+					'id' => id
+				}
+			end
+			page onePage['title'], onePage
+			count += 1
+		end
 	rescue
 		puts 'Parse error.'
 	end

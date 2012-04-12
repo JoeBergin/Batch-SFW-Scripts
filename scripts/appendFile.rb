@@ -17,10 +17,12 @@ def appendFile base, merge
 		baseJson = JSON.parse(base)
 		mergeJson = JSON.parse(merge)
 		# merge the stories
+		lastId = baseJson['story'][baseJson['story'].length - 1]['id']
 		baseJson['story'] = baseJson['story'] + mergeJson['story']
 		# update the journal
 		mergeJson['story'].each do |para|
 			entry = { 
+				'after' => lastId,
 				'id' => para['id'],
 				'type' => "add",
 				"item" => {
@@ -28,6 +30,7 @@ def appendFile base, merge
 						'type' => para['type']
 						}
 				}
+			lastId = para['id']
 			baseJson['journal'] << entry
 		end
 		# write the new file 
