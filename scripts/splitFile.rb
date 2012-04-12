@@ -81,5 +81,5 @@ begin
 	doc = IO.read("#{@directory}/#{filename}" )
 	splitFile doc 
 rescue
-	puts 'No Page with Title: ' + @original
+	puts 'No file with name: ' + @original
 end

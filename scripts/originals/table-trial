@@ -133,7 +133,7 @@
     {
       "type": "paragraph",
       "id": "b706504538f06dbf",
-      "text": "<Split>Mumble Bar</spliT>"
+      "text": "<Split\t>Mumble Bar</spliT>"
     },
     {
       "text": " jar's to you.",
