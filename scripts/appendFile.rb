@@ -26,14 +26,20 @@ def appendFile base, merge
 		mergeJson = JSON.parse(merge)
 		# merge the stories
 		lastId = baseJson['story'][baseJson['story'].length - 1]['id']
-		newPara = paragraph "Following merged from: " + mergeJson['title']
-		baseJson['story'] = (baseJson['story'] << newPara) + mergeJson['story']
+		if @notify
+			newPara = paragraph "Following merged from: " + mergeJson['title']
+			baseJson['story'] = (baseJson['story'] << newPara) + mergeJson['story']
+		else
+			baseJson['story'] = baseJson['story']  + mergeJson['story']
+		end
 		# update the journal
-		baseJson['journal'] << {
+		if @notify
+			baseJson['journal'] << {
 				'type' => 'add',
 				'id' => newPara['id'],
 				'item' => newPara
 			}
+		end
 		mergeJson['story'].each do |para|
 			entry = { 
 				'after' => lastId,
@@ -62,12 +68,19 @@ end
 @merge = ''
 @directory = 'originals'
 @destination = '../changes'
+@notify = false
 
 if ARGV.length == 2
 	@base = ARGV[0]
 	@merge = ARGV[1]
+elsif ARGV.length == 3
+	if ARGV[0] == '-n'
+		@notify = true
+	end
+	@base = ARGV[1]
+	@merge = ARGV[2]
 else
-	puts 'usage: aappendFile baseFile mergeFile'
+	puts 'usage: ./appendFile.rb [-n] baseFile mergeFile'
 	exit
 end
 

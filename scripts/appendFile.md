@@ -13,6 +13,10 @@
 <p>cd to the scripts directory <br/>
 ./appendFile.rb base merge</p>
 
+<p>If you use the -n command line argument (before the names of the input files) the script will insert a paragraph at the point of the merge detailing that the remaining paragraphs resulted from a merge. <br/>
+./appendFile.rb -n base merge
+</p>
+
 <p>In addition, for each paragraph added to the result (from the merge file) a new journal entry is added to the result indicating that a paragraph (or other item) was added. </p>
 
 </body></html>

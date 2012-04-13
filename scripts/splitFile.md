@@ -33,6 +33,10 @@
 <p>cd to the scripts directory:<br/>
 ./splitFile 'name of the source'</p>
 
+<p>If you use the -n command line argument (before the name of the source file) the script will insert a paragraph detailing that the parts after the first resulted from a split. <br/>
+./splitFile -n 'name of the source'
+</p>
+
 <p>The name of the source can be either a filename (of a file in the originals directory) or a page title. Either works. Do not include the path to originals. </p>
 
 <p>For example, both of these work:</p>

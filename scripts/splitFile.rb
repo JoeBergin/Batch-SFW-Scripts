@@ -82,9 +82,13 @@ def splitFile doc
 					whichPart += 1
 					# everything removed so far is also removed from next part
 					@toRemove << @toRemove[@toRemove.length - 1].clone
-					splitAnnounce = paragraph 'Split from: ' + originalTitle
-					newStory = [splitAnnounce]
-					journalAnnounce << {"type" => 'add', 'id' => splitAnnounce['id'], 'item' => splitAnnounce}
+					if @notify
+						splitAnnounce = paragraph 'Split from: ' + originalTitle
+						newStory = [splitAnnounce]
+						journalAnnounce << {"type" => 'add', 'id' => splitAnnounce['id'], 'item' => splitAnnounce}
+					else
+						newStory = []
+					end
 					currentTitle = name.strip
 					if numberOfWords(currentTitle) <= 1
 						warn '"' + currentTitle + '"' + " is a single word or has missing uppercase letters. Consider good multi-word titles."
@@ -111,7 +115,9 @@ def splitFile doc
 # add the journal 'add' entry here -- but which entry
 		# record the removals in the journals and output the pages
 		pages.each do |onePage|
-			onePage['journal'] << journalAnnounce[count] unless count == 0
+			if @notify
+				onePage['journal'] << journalAnnounce[count] unless count == 0
+			end
 			@toRemove[count].each do |id|
 				onePage['journal'] << {
 					'type' => 'remove',
@@ -136,11 +142,17 @@ end
 @original = ''
 @directory = 'originals'
 @destination = '../changes'
+@notify = false
 
 if ARGV.length == 1
 	@original = ARGV[0]
+elsif ARGV.length == 2
+	if ARGV[0] == '-n'
+		@notify = true
+	end
+	@original = ARGV[1]
 else
-	puts 'usage: splitFile.rb originalName'
+	puts 'usage: splitFile.rb  [-n] originalName'
 	exit
 end
 
