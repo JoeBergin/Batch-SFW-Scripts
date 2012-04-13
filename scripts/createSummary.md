@@ -12,4 +12,6 @@
 
 <p>It will also index the welcome-visitors page, which may not behave as you like. In which case, just remove that paragraph from the result.</p>
 
+<p> If you give the -j option, it will also provide a complete journal with an entry for each paragraph added. otherwise it journals only the creation. 
+
 </body></html>

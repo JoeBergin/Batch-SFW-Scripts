@@ -27,6 +27,15 @@ def page title, story
 	end
 end
 
+# create a wiki page (json) with provided journal
+def pageWithJournal title, story, journal
+  page = {'title' => title, 'story' => story, 'journal' => journal}
+  File.open("../pages/#{slug(title)}", 'w') do |file| 
+    file.write JSON.pretty_generate(page)
+  end
+end
+
+
 def grabTitle doc
 	begin
 		json = JSON.parse(doc)
@@ -39,7 +48,19 @@ def grabTitle doc
 end
 
 def summarize
+  if @fullJournal
+  	summaryJournal = [create @title]
+  	@summary.each do |para|
+  	summaryJournal << {
+  		'type' => 'add',
+  		'id' => para['id'],
+  		'item' => para
+  		}  	
+  	end
+  	pageWithJournal @title, @summary, summaryJournal
+  else
 	page @title, @summary
+  end
 end
 def warn s
 	puts "#######  " + s
@@ -56,11 +77,14 @@ end
 
 @source = 'originals'
 @dest = '../pages/'
+@fullJournal = false
 @title = 'Index Of Pages'
 
 for i in 0...ARGV.length 
 	if ARGV[i] == '-s'
 		@source = ARGV[i+1]
+	elsif ARGV[i] == '-j'
+		@fullJournal = true
 	elsif ARGV[i] == '-d'
 		@dest = ARGV[i+1]
 	elsif ARGV[i] == '-t'
@@ -72,6 +96,7 @@ for i in 0...ARGV.length
 		puts '-s path to the source directory'
 		puts '-d path to the destination directory'
 		puts '-t \'name\' to produce a summary with given name'
+		puts '-j to produce a full journal in the output file'
 		puts '-h produces this text'
 		exit
 	end

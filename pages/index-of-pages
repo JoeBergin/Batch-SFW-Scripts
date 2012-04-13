@@ -1,0 +1,294 @@
+{
+  "title": "Index Of Pages",
+  "journal": [
+    {
+      "id": "a4208358defd94dd",
+      "type": "create",
+      "item": {
+        "title": "Index Of Pages"
+      }
+    },
+    {
+      "id": "2ee15888cc0e4580",
+      "type": "add",
+      "item": {
+        "text": "[[Changes With Ad-Hoc Selection]]",
+        "id": "2ee15888cc0e4580",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "7eade227b7b58f5f",
+      "type": "add",
+      "item": {
+        "text": "[[Changes With Polymorphism]]",
+        "id": "7eade227b7b58f5f",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "dca9523c627a5f7c",
+      "type": "add",
+      "item": {
+        "text": "[[Consequences]]",
+        "id": "dca9523c627a5f7c",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "bb65b8692d59ea9b",
+      "type": "add",
+      "item": {
+        "text": "[[Creativity Under Constraint]]",
+        "id": "bb65b8692d59ea9b",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "8a632bc9e50f0cc2",
+      "type": "add",
+      "item": {
+        "text": "[[DTSTTCPW]]",
+        "id": "8a632bc9e50f0cc2",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "0bc4421422e89f12",
+      "type": "add",
+      "item": {
+        "text": "[[Example Part One]]",
+        "id": "0bc4421422e89f12",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "a6b2362f93377496",
+      "type": "add",
+      "item": {
+        "text": "[[Example Part Three]]",
+        "id": "a6b2362f93377496",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "3421821786e6adad",
+      "type": "add",
+      "item": {
+        "text": "[[Example Part Two]]",
+        "id": "3421821786e6adad",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "88f5421b57d30fa2",
+      "type": "add",
+      "item": {
+        "text": "[[Experiences]]",
+        "id": "88f5421b57d30fa2",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "07e90db81e90959d",
+      "type": "add",
+      "item": {
+        "text": "[[Information Hill]]",
+        "id": "07e90db81e90959d",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "9772ea4cf75fe559",
+      "type": "add",
+      "item": {
+        "text": "[[Joe Bergin]]",
+        "id": "9772ea4cf75fe559",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "cb29ae4ba5916f40",
+      "type": "add",
+      "item": {
+        "text": "[[Marshaling the Objects]]",
+        "id": "cb29ae4ba5916f40",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "86922678fa37c40a",
+      "type": "add",
+      "item": {
+        "text": "[[Polymorphic Programming]]",
+        "id": "86922678fa37c40a",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "e3be3329719c73c3",
+      "type": "add",
+      "item": {
+        "text": "[[Revisit Say It Once]]",
+        "id": "e3be3329719c73c3",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "6a8eb8984b4ec25f",
+      "type": "add",
+      "item": {
+        "text": "[[Say It Once]]",
+        "id": "6a8eb8984b4ec25f",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "3077469ef9e132e7",
+      "type": "add",
+      "item": {
+        "text": "[[Selection]]",
+        "id": "3077469ef9e132e7",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "d5a46b9534cd07e1",
+      "type": "add",
+      "item": {
+        "text": "[[Table Trial]]",
+        "id": "d5a46b9534cd07e1",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "67a8f0f8aba12a8f",
+      "type": "add",
+      "item": {
+        "text": "[[War Story One]]",
+        "id": "67a8f0f8aba12a8f",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "9761cfa47d2a896d",
+      "type": "add",
+      "item": {
+        "text": "[[Welcome Visitors]]",
+        "id": "9761cfa47d2a896d",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "45784eb0489c72ce",
+      "type": "add",
+      "item": {
+        "text": "[[Why Do This]]",
+        "id": "45784eb0489c72ce",
+        "type": "paragraph"
+      }
+    }
+  ],
+  "story": [
+    {
+      "text": "[[Changes With Ad-Hoc Selection]]",
+      "id": "2ee15888cc0e4580",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Changes With Polymorphism]]",
+      "id": "7eade227b7b58f5f",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Consequences]]",
+      "id": "dca9523c627a5f7c",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Creativity Under Constraint]]",
+      "id": "bb65b8692d59ea9b",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[DTSTTCPW]]",
+      "id": "8a632bc9e50f0cc2",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Example Part One]]",
+      "id": "0bc4421422e89f12",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Example Part Three]]",
+      "id": "a6b2362f93377496",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Example Part Two]]",
+      "id": "3421821786e6adad",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Experiences]]",
+      "id": "88f5421b57d30fa2",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Information Hill]]",
+      "id": "07e90db81e90959d",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Joe Bergin]]",
+      "id": "9772ea4cf75fe559",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Marshaling the Objects]]",
+      "id": "cb29ae4ba5916f40",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Polymorphic Programming]]",
+      "id": "86922678fa37c40a",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Revisit Say It Once]]",
+      "id": "e3be3329719c73c3",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Say It Once]]",
+      "id": "6a8eb8984b4ec25f",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Selection]]",
+      "id": "3077469ef9e132e7",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Table Trial]]",
+      "id": "d5a46b9534cd07e1",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[War Story One]]",
+      "id": "67a8f0f8aba12a8f",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Welcome Visitors]]",
+      "id": "9761cfa47d2a896d",
+      "type": "paragraph"
+    },
+    {
+      "text": "[[Why Do This]]",
+      "id": "45784eb0489c72ce",
+      "type": "paragraph"
+    }
+  ]
+}
