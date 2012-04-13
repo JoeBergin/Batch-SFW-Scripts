@@ -2,6 +2,14 @@
 require 'rubygems'
 require 'json'
 
+def random
+  (1..16).collect {(rand*16).floor.to_s(16)}.join ''
+end
+
+def paragraph text
+  {'type' => 'paragraph', 'text' => text, 'id' => random()}
+end
+
 def page title, json
   File.open("#{@destination}/#{slug(title)}", 'w') do |file| 
     file.write JSON.pretty_generate(json)
@@ -46,6 +54,7 @@ def splitFile doc
 		originalTitle = currentTitle = json['title']
 		story = json['story']
 		newStory = []
+		journalAnnounce = [nil]
 		pages = [] # will save generated  pages until the end
 		whichPart = 0
 		story.each do |para|
@@ -73,7 +82,9 @@ def splitFile doc
 					whichPart += 1
 					# everything removed so far is also removed from next part
 					@toRemove << @toRemove[@toRemove.length - 1].clone
-					newStory = []
+					splitAnnounce = paragraph 'Split from: ' + originalTitle
+					newStory = [splitAnnounce]
+					journalAnnounce << {"type" => 'add', 'id' => splitAnnounce['id'], 'item' => splitAnnounce}
 					currentTitle = name.strip
 					if numberOfWords(currentTitle) <= 1
 						warn '"' + currentTitle + '"' + " is a single word or has missing uppercase letters. Consider good multi-word titles."
@@ -97,8 +108,10 @@ def splitFile doc
 =end
 		pages << json.clone # save the page
 		count = 0
+# add the journal 'add' entry here -- but which entry
 		# record the removals in the journals and output the pages
 		pages.each do |onePage|
+			onePage['journal'] << journalAnnounce[count] unless count == 0
 			@toRemove[count].each do |id|
 				onePage['journal'] << {
 					'type' => 'remove',

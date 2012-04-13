@@ -1,3 +1,5 @@
+<html><body>
+
 <p>Docs for appendFile.rb</p>
 
 <p>This script will merge one JSON file into another by appending one to the other. The originals are not altered, but a new file is written containing the merged files. </p>
@@ -12,3 +14,5 @@
 ./appendFile.rb base merge</p>
 
 <p>In addition, for each paragraph added to the result (from the merge file) a new journal entry is added to the result indicating that a paragraph (or other item) was added. </p>
+
+</body></html>

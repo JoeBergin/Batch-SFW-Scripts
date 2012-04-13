@@ -1,3 +1,5 @@
+<body><html>
+
 <p>Docs for splitFile.rb</p>
 
 <p>splitFile will split one json file into parts. The original must be in the originals directory (./originals) and the results will be put into ../changes.</p>
@@ -37,3 +39,5 @@
 
 <p>Silver:scripts jbergin$ ./splitFile.rb "table-trial" <br/>
 Silver:scripts jbergin$ ./splitFile.rb "Table Trial"</p>
+
+</body></html>

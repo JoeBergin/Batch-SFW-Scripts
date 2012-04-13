@@ -114,6 +114,15 @@
       }
     },
     {
+      "id": "ebb652cbc6185e0f",
+      "type": "add",
+      "item": {
+        "text": "Split from: Table Trial",
+        "id": "ebb652cbc6185e0f",
+        "type": "paragraph"
+      }
+    },
+    {
       "id": "3ba42e00488ad37f",
       "type": "remove"
     },
@@ -143,6 +152,11 @@
     }
   ],
   "story": [
+    {
+      "text": "Split from: Table Trial",
+      "id": "ebb652cbc6185e0f",
+      "type": "paragraph"
+    },
     {
       "text": " jar's to you.",
       "id": "c8fec11d1e0ff72c",

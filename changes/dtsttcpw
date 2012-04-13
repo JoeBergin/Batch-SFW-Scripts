@@ -44,6 +44,15 @@
       }
     },
     {
+      "id": "562459f1168f05a2",
+      "type": "add",
+      "item": {
+        "text": "Following merged from: Consequences",
+        "id": "562459f1168f05a2",
+        "type": "paragraph"
+      }
+    },
+    {
       "after": "18003c8498b9cbd4",
       "id": "e3581e1f87be945c",
       "type": "add",
@@ -133,6 +142,11 @@
     {
       "text": "This is a pattern of agile software development. It is discussed in [[Joe Bergin]]'s Agile Software: Patterns of Practice. The same advice (not as a pattern) is found in Kent Beck's Extreme Programming Explained. ",
       "id": "18003c8498b9cbd4",
+      "type": "paragraph"
+    },
+    {
+      "text": "Following merged from: Consequences",
+      "id": "562459f1168f05a2",
       "type": "paragraph"
     },
     {

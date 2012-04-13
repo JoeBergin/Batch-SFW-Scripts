@@ -114,6 +114,15 @@
       }
     },
     {
+      "id": "28e698fc639a5894",
+      "type": "add",
+      "item": {
+        "text": "Split from: Table Trial",
+        "id": "28e698fc639a5894",
+        "type": "paragraph"
+      }
+    },
+    {
       "id": "3ba42e00488ad37f",
       "type": "remove"
     },
@@ -139,6 +148,11 @@
     }
   ],
   "story": [
+    {
+      "text": "Split from: Table Trial",
+      "id": "28e698fc639a5894",
+      "type": "paragraph"
+    },
     {
       "text": "<ul>\n  <li> onzer  </li>\n  <li> twozer</li>\n  <li> treezer </li>\n\t <ul>\n\t  <li> foo </li>\n\t  <li> bar </li>\n\t  <li> bas </li>\n\t </ul>\n <li> quatrezer  </li>\n  <li>funfzer </li>  \n</ul>",
       "id": "19b610bedd64f71c",
