@@ -2,7 +2,7 @@
   "title": "DTSTTCPW",
   "journal": [
     {
-      "id": "8068fe04f0a7b050",
+      "id": "d07d1018eda10198",
       "type": "create",
       "item": {
         "title": "DTSTTCPW"
@@ -11,8 +11,8 @@
   ],
   "story": [
     {
-      "text": "Page was renamed to [[Oh Well]] on 2012-04-13",
-      "id": "4ca3245b70c44425",
+      "text": "Page was renamed to [[Oh Well]] on 2012-04-13T22:07:09-04:00",
+      "id": "afd821fdd5fd14cd",
       "type": "paragraph"
     }
   ]

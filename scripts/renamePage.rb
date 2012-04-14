@@ -1,17 +1,41 @@
 #!/usr/bin/ruby
 require 'rubygems'
 require 'json'
+require 'date'
 
+def slug title
+  title.gsub(/\s/, '-').gsub(/[^A-Za-z0-9-]/, '').downcase()
+end
+
+def random
+  (1..16).collect {(rand*16).floor.to_s(16)}.join ''
+end
+
+# create the journal "create" entry
+def create title
+  {'type' => 'create', 'id' => random, 'item' => {'title' => title}}
+end 
+
+# create a wiki paragraph
+def paragraph text
+  {'type' => 'paragraph', 'text' => text, 'id' => random()}
+end
+
+# create a wiki page (json) with empty journal
+def emptyPage title, story
+  page = {'title' => title, 'story' => story, 'journal' => [create(title)]}
+  File.open("#{@destination}/#{slug(title)}", 'w') do |file| 
+    file.write JSON.pretty_generate(page)
+  end
+end
+
+# create a page from a complete json
 def page title, json
   page = json 
   File.open("#{@destination}/#{slug(title)}", 'w') do |file| 
     file.write JSON.pretty_generate(page)
     #file.close
   end
-end
-
-def slug title
-  title.gsub(/\s/, '-').gsub(/[^A-Za-z0-9-]/, '').downcase()
 end
 
 @changed  = []
@@ -53,6 +77,11 @@ def renameFileSet  oldName, newName
 	end
 end
 
+def makeForwardingPage title, newName
+	aStory = [] << (paragraph "Page was renamed to [[#{newName}]] on #{Date.today}")
+	emptyPage title, aStory
+end
+
 def grabTitleFile newTitle, doc
 # gets the official name of the page and also updates its file
 	begin
@@ -68,7 +97,12 @@ def grabTitleFile newTitle, doc
 		
 		result = json['title']
 		json['title'] = newTitle
+		if slug(result) == slug(newTitle)
+			puts "The names are the same. Exiting"
+			exit
+		end
 		page newTitle, json
+		makeForwardingPage result, newTitle
 		handleOneFile "#{@destination}/#{slug(newTitle)}", @original, @newName
 		result
 	rescue
