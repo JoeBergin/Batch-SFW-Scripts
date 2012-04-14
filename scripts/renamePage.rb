@@ -78,8 +78,10 @@ def renameFileSet  oldName, newName
 end
 
 def makeForwardingPage title, newName
-	aStory = [] << (paragraph "Page was renamed to [[#{newName}]] on #{Date.today}")
-	emptyPage title, aStory
+	if slug(title) != slug(newName)
+		aStory = [] << (paragraph "Page was renamed to [[#{newName}]] on #{Date.today}")
+		emptyPage title, aStory
+	end
 end
 
 def grabTitleFile newTitle, doc
@@ -97,10 +99,6 @@ def grabTitleFile newTitle, doc
 		
 		result = json['title']
 		json['title'] = newTitle
-		if slug(result) == slug(newTitle)
-			puts "The names are the same. Exiting"
-			exit
-		end
 		page newTitle, json
 		makeForwardingPage result, newTitle
 		handleOneFile "#{@destination}/#{slug(newTitle)}", @original, @newName
